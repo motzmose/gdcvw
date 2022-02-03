@@ -1,7 +1,8 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2022-02-03 18:25:28.535198",
+ "autoname": "TN.#######",
+ "creation": "2022-02-03 23:08:10.183017",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -159,10 +160,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-03 18:27:33.953967",
+ "modified": "2022-02-03 19:34:23.054456",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
