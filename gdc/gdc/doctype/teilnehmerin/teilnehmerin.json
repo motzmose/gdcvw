@@ -1,0 +1,184 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-02-03 18:25:28.535198",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "teilnehmerin",
+  "vorname",
+  "nachname",
+  "username",
+  "klasse",
+  "schule",
+  "plz",
+  "stadt",
+  "gdc_schule",
+  "endger\u00e4t",
+  "column_break_10",
+  "eltern",
+  "anrede",
+  "eltern_vorname",
+  "eltern_nachname",
+  "eltern_email",
+  "wohererfahren",
+  "section_break_18",
+  "abrechnungsdaten",
+  "wirtschaftsregion",
+  "einwilligungen",
+  "zoom",
+  "moodle",
+  "evaluation",
+  "bildrechte"
+ ],
+ "fields": [
+  {
+   "fieldname": "teilnehmerin",
+   "fieldtype": "Heading",
+   "label": "Teilnehmerin"
+  },
+  {
+   "fieldname": "vorname",
+   "fieldtype": "Data",
+   "label": "Vorname"
+  },
+  {
+   "fieldname": "nachname",
+   "fieldtype": "Data",
+   "label": "Nachname"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fieldname": "klasse",
+   "fieldtype": "Data",
+   "label": "Klasse"
+  },
+  {
+   "fieldname": "schule",
+   "fieldtype": "Data",
+   "label": "Schule"
+  },
+  {
+   "fieldname": "plz",
+   "fieldtype": "Data",
+   "label": "PLZ"
+  },
+  {
+   "fieldname": "stadt",
+   "fieldtype": "Data",
+   "label": "Stadt"
+  },
+  {
+   "fieldname": "gdc_schule",
+   "fieldtype": "Data",
+   "label": "GDC Schule"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "eltern",
+   "fieldtype": "Heading",
+   "label": "Eltern"
+  },
+  {
+   "fieldname": "eltern_vorname",
+   "fieldtype": "Data",
+   "label": "Eltern Vorname"
+  },
+  {
+   "fieldname": "eltern_nachname",
+   "fieldtype": "Data",
+   "label": "Eltern Nachname"
+  },
+  {
+   "fieldname": "eltern_email",
+   "fieldtype": "Data",
+   "label": "Eltern Email"
+  },
+  {
+   "fieldname": "anrede",
+   "fieldtype": "Data",
+   "label": "Anrede"
+  },
+  {
+   "fieldname": "wirtschaftsregion",
+   "fieldtype": "Data",
+   "label": "Wirtschaftsregion"
+  },
+  {
+   "fieldname": "wohererfahren",
+   "fieldtype": "Data",
+   "label": "WoherErfahren"
+  },
+  {
+   "fieldname": "endger\u00e4t",
+   "fieldtype": "Data",
+   "label": "Endger\u00e4t"
+  },
+  {
+   "fieldname": "evaluation",
+   "fieldtype": "Data",
+   "label": "Evaluation"
+  },
+  {
+   "fieldname": "bildrechte",
+   "fieldtype": "Data",
+   "label": "Bildrechte"
+  },
+  {
+   "fieldname": "zoom",
+   "fieldtype": "Data",
+   "label": "Zoom"
+  },
+  {
+   "fieldname": "moodle",
+   "fieldtype": "Data",
+   "label": "Moodle"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "abrechnungsdaten",
+   "fieldtype": "Heading",
+   "label": "Abrechnungsdaten"
+  },
+  {
+   "fieldname": "einwilligungen",
+   "fieldtype": "Heading",
+   "label": "Einwilligungen"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-03 18:27:33.953967",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "Teilnehmerin",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
