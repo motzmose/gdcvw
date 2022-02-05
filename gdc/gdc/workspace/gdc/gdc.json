@@ -1,0 +1,29 @@
+{
+ "charts": [
+  {
+   "chart_name": "Teilnehmerinnenzahl",
+   "label": "Teilnehmerinnenzahl"
+  }
+ ],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">GDC</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Teilnehmerinnenzahl\",\"col\":12}}]",
+ "creation": "2022-02-05 15:00:37.009758",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "label": "GDC",
+ "links": [],
+ "modified": "2022-02-05 15:14:10.472972",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "GDC",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "GDC"
+}
