@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:plz",
+ "creation": "2022-02-05 14:12:02.705922",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plz",
+  "wirtschaftsregion",
+  "k\u00fcrzel"
+ ],
+ "fields": [
+  {
+   "fieldname": "plz",
+   "fieldtype": "Data",
+   "label": "PLZ",
+   "unique": 1
+  },
+  {
+   "fieldname": "wirtschaftsregion",
+   "fieldtype": "Data",
+   "label": "Wirtschaftsregion"
+  },
+  {
+   "fieldname": "k\u00fcrzel",
+   "fieldtype": "Data",
+   "label": "K\u00fcrzel"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-05 14:12:53.279290",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "PLZWR",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

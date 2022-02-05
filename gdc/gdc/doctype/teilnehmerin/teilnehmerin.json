@@ -109,11 +109,6 @@
    "label": "Anrede"
   },
   {
-   "fieldname": "wirtschaftsregion",
-   "fieldtype": "Data",
-   "label": "Wirtschaftsregion"
-  },
-  {
    "fieldname": "wohererfahren",
    "fieldtype": "Data",
    "label": "WoherErfahren"
@@ -156,11 +151,16 @@
    "fieldname": "einwilligungen",
    "fieldtype": "Heading",
    "label": "Einwilligungen"
+  },
+  {
+   "fieldname": "wirtschaftsregion",
+   "fieldtype": "Data",
+   "label": "Wirtschaftsregion"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-03 19:34:23.054456",
+ "modified": "2022-02-05 14:39:47.971891",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",
