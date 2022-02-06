@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tutorinnen</span>\",\"col\":12}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tutorinnen</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teilnehmerinnenliste\",\"col\":3}}]",
  "creation": "2022-02-05 15:05:20.203846",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -10,7 +10,7 @@
  "idx": 0,
  "label": "Tutorinnen",
  "links": [],
- "modified": "2022-02-05 15:14:02.541175",
+ "modified": "2022-02-06 14:45:54.740365",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Tutorinnen",
@@ -19,6 +19,14 @@
  "public": 1,
  "roles": [],
  "sequence_id": 2.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Teilnehmerinnenliste",
+   "link_to": "Teilnehmerin",
+   "type": "DocType"
+  }
+ ],
  "title": "Tutorinnen"
 }

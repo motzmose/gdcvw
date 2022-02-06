@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-02-06 14:37:12.909315",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mcapi",
+  "mcstdpw"
+ ],
+ "fields": [
+  {
+   "fieldname": "mcapi",
+   "fieldtype": "Data",
+   "label": "Mailcow API Key"
+  },
+  {
+   "fieldname": "mcstdpw",
+   "fieldtype": "Data",
+   "label": "Standard Passwort Mails"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-02-06 14:52:36.554458",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "GDC Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
