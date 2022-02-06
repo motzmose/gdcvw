@@ -2,9 +2,10 @@
 # For license information, please see license.txt
 
 import frappe
-#from urllib3 import Request, urlopen
 import requests
+import json
 from frappe.model.document import Document
+
 
 
 class Teilnehmerin(Document):
@@ -32,3 +33,19 @@ class Teilnehmerin(Document):
                    'X-API-Key': settings.mcapi}
         request = requests.post(
             'https://mail.gdc-bw.de/api/v1/add/mailbox', json=values, headers=headers)
+
+@frappe.whitelist()
+def resetmail(doc: str):
+    doc_dict = json.loads(doc)
+    settings = frappe.get_doc('GDC Settings')
+    values = {
+        "items": [
+            f"{doc_dict['username']}@gdc-bw.de"
+            ],
+        "attr": {
+            "password": settings.mcstdpw,
+            "password2": settings.mcstdpw,
+            }
+        }
+    headers = {'Content-Type': 'application/json','X-API-Key': settings.mcapi}
+    request = requests.post('https://mail.gdc-bw.de/api/v1/edit/mailbox', json=values, headers=headers)
