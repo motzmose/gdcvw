@@ -101,3 +101,6 @@ def resetmail(doc: str):
         }
     headers = {'Content-Type': 'application/json','X-API-Key': settings.mcapi}
     request = requests.post(f'https://{settings.mdl_domain}/api/v1/edit/mailbox', json=values, headers=headers)
+    frappe.msgprint(
+        title = 'Bestätigung',
+        msg = 'Mailpasswort wurde zurückgesetzt')
