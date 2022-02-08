@@ -1,0 +1,32 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Verwaltung</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teilnehmerinnen\",\"col\":3}}]",
+ "creation": "2022-02-08 23:02:30.786103",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "setting-gear",
+ "idx": 0,
+ "label": "Verwaltung",
+ "links": [],
+ "modified": "2022-02-08 23:54:53.459744",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "Verwaltung",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Teilnehmerinnen",
+   "link_to": "Teilnehmerin",
+   "type": "DocType"
+  }
+ ],
+ "title": "Verwaltung"
+}

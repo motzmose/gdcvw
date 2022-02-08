@@ -6,6 +6,7 @@
    "label": "Mail Passwort zur\u00fccksetzen"
   }
  ],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:username",
  "creation": "2022-02-06 21:11:55.201226",
@@ -192,7 +193,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-08 23:19:39.669446",
+ "modified": "2022-02-08 23:32:35.308207",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",
@@ -216,10 +217,12 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Verwaltung",
+   "select": 1,
    "share": 1,
    "write": 1
   },
