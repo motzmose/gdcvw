@@ -17,8 +17,10 @@
   "vorname",
   "nachname",
   "username",
+  "email",
   "klasse",
   "schule",
+  "schulform",
   "plz",
   "stadt",
   "gdc_schule",
@@ -33,6 +35,7 @@
   "section_break_18",
   "abrechnungsdaten",
   "wirtschaftsregion",
+  "wr",
   "einwilligungen",
   "zoom",
   "moodle",
@@ -170,11 +173,26 @@
    "fieldtype": "Link",
    "label": "Gruppe",
    "options": "Gruppe"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "schulform",
+   "fieldtype": "Data",
+   "label": "Schulform"
+  },
+  {
+   "fieldname": "wr",
+   "fieldtype": "Data",
+   "label": "WR"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-08 12:09:32.666130",
+ "modified": "2022-02-08 16:05:54.120141",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",

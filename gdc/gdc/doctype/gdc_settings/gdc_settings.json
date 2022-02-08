@@ -1,30 +1,77 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2022-02-06 14:37:12.909315",
+ "creation": "2022-02-06 21:11:55.493336",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mailcow",
+  "mcdomain",
   "mcapi",
-  "mcstdpw"
+  "mcstdpw",
+  "section_break_4",
+  "moodle",
+  "mdl_domain",
+  "mdl_api_key",
+  "mdl_std_course",
+  "mdl_std_pwd"
  ],
  "fields": [
   {
    "fieldname": "mcapi",
    "fieldtype": "Data",
-   "label": "Mailcow API Key"
+   "label": "API Key"
   },
   {
    "fieldname": "mcstdpw",
    "fieldtype": "Data",
    "label": "Standard Passwort Mails"
+  },
+  {
+   "fieldname": "mailcow",
+   "fieldtype": "Heading",
+   "label": "Mailcow"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "moodle",
+   "fieldtype": "Heading",
+   "label": "Moodle"
+  },
+  {
+   "fieldname": "mcdomain",
+   "fieldtype": "Data",
+   "label": "Domain"
+  },
+  {
+   "fieldname": "mdl_domain",
+   "fieldtype": "Data",
+   "label": "Domain"
+  },
+  {
+   "fieldname": "mdl_api_key",
+   "fieldtype": "Data",
+   "label": "API Key"
+  },
+  {
+   "fieldname": "mdl_std_course",
+   "fieldtype": "Data",
+   "label": "Standard Kurs"
+  },
+  {
+   "fieldname": "mdl_std_pwd",
+   "fieldtype": "Data",
+   "label": "Moodle Standard Passwort"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-02-06 14:52:36.554458",
+ "modified": "2022-02-08 18:00:56.009243",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "GDC Settings",
