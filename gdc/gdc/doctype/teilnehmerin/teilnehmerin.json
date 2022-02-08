@@ -38,7 +38,7 @@
   "moodle",
   "evaluation",
   "bildrechte",
-  "data_26"
+  "gruppe"
  ],
  "fields": [
   {
@@ -166,13 +166,15 @@
    "label": "Wirtschaftsregion"
   },
   {
-   "fieldname": "data_26",
-   "fieldtype": "Data"
+   "fieldname": "gruppe",
+   "fieldtype": "Link",
+   "label": "Gruppe",
+   "options": "Gruppe"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-06 22:48:18.316467",
+ "modified": "2022-02-08 12:09:32.666130",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",
