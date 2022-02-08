@@ -33,14 +33,57 @@ class Teilnehmerin(Document):
         # Fetch Settings from Single DocType 'GDC Settings'
         settings = frappe.get_doc('GDC Settings')
         # API Request to Mailcow creating a new Mailbox
-        mc_values = {"local_part": self.username, "domain": "gdc-bw.de", "name": f"{self.vorname} {self.nachname}", "quota": "100",
-                     "password": settings.mcstdpw, "password2": settings.mcstdpw, "active": "1", "force_pw_update": "1", "tls_enforce_in": "0", "tls_enforce_out": "0"}
+        mc_values = {"local_part": self.username,
+                    "domain": "gdc-bw.de",
+                    "name": f"{self.vorname} {self.nachname}",
+                    "quota": "100",
+                    "password": settings.mcstdpw,
+                    "password2": settings.mcstdpw,
+                    "active": "1",
+                    "force_pw_update": "1",
+                    "tls_enforce_in": "0",
+                    "tls_enforce_out": "0"}
         mc_headers = {'Content-Type': 'application/json',
-                      'X-API-Key': settings.mcapi}
+                    'X-API-Key': settings.mcapi}
         mc_request = requests.post(
-            f'https://{settings.mcdomain}/api/v1/add/mailbox', json=mc_values, headers=mc_headers)
+                    f'https://{settings.mcdomain}/api/v1/add/mailbox',
+                    json=mc_values,
+                    headers=mc_headers)
+
         # API Request to Moodle creating a new Account
-        mdl_params = {"wstoken": settings.mdl_api_key, "moodlewsrestformat": 'json', "wsfunction": 'core_user_create_users', "password":settings.mdl_std_pwd, "username": self.username, "firstname": self.vorname, "lastname": self.nachname, "email": self.email, "city": self.stadt}
+        mdl_params = {"wstoken": settings.mdl_api_key,
+                    "moodlewsrestformat": 'json',
+                    "wsfunction": 'core_user_create_users',
+                    "users[0][password]": settings.mdl_std_pwd,
+                    "users[0][username]": self.username,
+                    "users[0][firstname]": self.vorname,
+                    "users[0][lastname]": self.nachname,
+                    "users[0][email]": self.email,
+                    "users[0][city]": self.stadt,
+                        "users[0][customfields][0][type]":"name_eltern",
+                        "users[0][customfields][0][value]":f'{self.eltern_vorname} {self.eltern_nachname}',
+
+                        "users[0][customfields][1][type]":"mail_eltern",
+                        "users[0][customfields][1][value]":self.eltern_email,
+
+                        "users[0][customfields][2][type]":"plz",
+                        "users[0][customfields][2][value]":self.plz,
+
+                        "users[0][customfields][3][type]":"schulform",
+                        "users[0][customfields][3][value]":self.schulform,
+
+                        "users[0][customfields][4][type]":"schule",
+                        "users[0][customfields][4][value]":self.schule,
+
+                        "users[0][customfields][5][type]":"region",
+                        "users[0][customfields][5][value]":self.wirtschaftsregion,
+
+                        "users[0][customfields][6][type]":"schulform",
+                        "users[0][customfields][6][value]":self.schulform,
+
+                        "users[0][customfields][7][type]":"klassenstufe",
+                        "users[0][customfields][7][value]":self.klasse,
+                    }
         mdl_request = requests.post(f'https://{settings.mdl_domain}/webservice/rest/server.php', mdl_params)
         print(mdl_request)
 @frappe.whitelist()
