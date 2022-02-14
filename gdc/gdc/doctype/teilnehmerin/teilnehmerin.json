@@ -42,7 +42,21 @@
   "moodle",
   "evaluation",
   "bildrechte",
-  "gruppe"
+  "gruppe",
+  "basiskurse_section",
+  "digital_communication_basiskurs",
+  "social_media_basiskurs",
+  "snap_basiskurs",
+  "erweiterungskurse_section",
+  "appinventor",
+  "videoschnitt",
+  "3d_druck",
+  "vertiefungskurs_section",
+  "social_media_vertiefungskurs",
+  "snap_vertiefungskurs",
+  "python_vertiefungskurs",
+  "dash_vertiefungskurs",
+  "appinventor_vertiefungskurs"
  ],
  "fields": [
   {
@@ -189,11 +203,90 @@
    "fieldname": "wr",
    "fieldtype": "Data",
    "label": "WR"
+  },
+  {
+   "fieldname": "basiskurse_section",
+   "fieldtype": "Section Break",
+   "label": "Basiskurse"
+  },
+  {
+   "default": "0",
+   "fieldname": "digital_communication_basiskurs",
+   "fieldtype": "Check",
+   "label": "Digital Communication Basiskurs"
+  },
+  {
+   "default": "0",
+   "fieldname": "social_media_basiskurs",
+   "fieldtype": "Check",
+   "label": "Social Media Basiskurs"
+  },
+  {
+   "default": "0",
+   "fieldname": "snap_basiskurs",
+   "fieldtype": "Check",
+   "label": "Snap Basiskurs"
+  },
+  {
+   "fieldname": "erweiterungskurse_section",
+   "fieldtype": "Section Break",
+   "label": "Erweiterungskurse"
+  },
+  {
+   "default": "0",
+   "fieldname": "appinventor",
+   "fieldtype": "Check",
+   "label": "AppInventor"
+  },
+  {
+   "default": "0",
+   "fieldname": "videoschnitt",
+   "fieldtype": "Check",
+   "label": "Videoschnitt"
+  },
+  {
+   "default": "0",
+   "fieldname": "3d_druck",
+   "fieldtype": "Check",
+   "label": "3D Druck"
+  },
+  {
+   "fieldname": "vertiefungskurs_section",
+   "fieldtype": "Section Break",
+   "label": "Vertiefungskurs"
+  },
+  {
+   "default": "0",
+   "fieldname": "social_media_vertiefungskurs",
+   "fieldtype": "Check",
+   "label": "Social Media Vertiefungskurs"
+  },
+  {
+   "default": "0",
+   "fieldname": "snap_vertiefungskurs",
+   "fieldtype": "Check",
+   "label": "Snap Vertiefungskurs"
+  },
+  {
+   "default": "0",
+   "fieldname": "python_vertiefungskurs",
+   "fieldtype": "Check",
+   "label": "Python Vertiefungskurs"
+  },
+  {
+   "fieldname": "dash_vertiefungskurs",
+   "fieldtype": "Data",
+   "label": "Dash Vertiefungskurs"
+  },
+  {
+   "fieldname": "appinventor_vertiefungskurs",
+   "fieldtype": "Data",
+   "label": "AppInventor Vertiefungskurs"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-08 23:32:35.308207",
+ "modified": "2022-02-11 14:30:25.351434",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",
