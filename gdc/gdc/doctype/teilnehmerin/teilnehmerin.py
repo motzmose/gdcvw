@@ -20,12 +20,15 @@ class Teilnehmerin(Document):
     def before_naming(self):
         num_retries = 100
         nickname = f'{self.vorname.lower().replace(" ", "")}_{self.nachname.lower().replace(" ", "")}'
-        for attempt_no in range(num_retries):
-            if frappe.db.exists('Teilnehmerin', nickname):
-                nickname = f'{self.vorname.lower().replace(" ", "")}_{self.nachname.lower().replace(" ", "")}'+str(attempt_no)
-            else:
-                self.username = nickname
-                break
+        if self.username!="":
+            for attempt_no in range(num_retries):
+                if frappe.db.exists('Teilnehmerin', nickname):
+                    nickname = f'{self.vorname.lower().replace(" ", "")}_{self.nachname.lower().replace(" ", "")}'+str(attempt_no)
+                else:
+                    self.username = nickname
+                    break
+        else:
+            pass
 
     # Controller Method to start API requests after the Document has been created
     def after_insert(self):
