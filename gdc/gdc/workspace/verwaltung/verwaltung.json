@@ -10,7 +10,7 @@
  "idx": 0,
  "label": "Verwaltung",
  "links": [],
- "modified": "2022-02-08 23:54:53.459744",
+ "modified": "2022-02-14 17:37:36.932491",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",
@@ -18,7 +18,7 @@
  "parent_page": "",
  "public": 1,
  "roles": [],
- "sequence_id": 1.0,
+ "sequence_id": 2.0,
  "shortcuts": [
   {
    "color": "Grey",
