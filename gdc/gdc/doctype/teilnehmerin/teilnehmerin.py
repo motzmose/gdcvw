@@ -19,18 +19,18 @@ class Teilnehmerin(Document):
     # Create Username based on Firstname and Lastname before the Document gets its name
     def before_naming(self):
         num_retries = 100
-        nickname = f'{self.vorname.lower()}_{self.nachname.lower()}'
+        nickname = f'{self.vorname.lower().replace(" ", "")}_{self.nachname.lower().replace(" ", "")}'
         for attempt_no in range(num_retries):
             if frappe.db.exists('Teilnehmerin', nickname):
-                nickname = f'{self.vorname.lower()}_{self.nachname.lower()}' + \
-                    str(attempt_no)
+                nickname = f'{self.vorname.lower().replace(" ", "")}_{self.nachname.lower().replace(" ", "")}'+str(attempt_no)
             else:
                 self.username = nickname
                 break
 
     # Controller Method to start API requests after the Document has been created
     def after_insert(self):
-        # Fetch Settings from Single DocType 'GDC Settings'
+        print("~~~API REQUESTS HAVE BEEN MADE~~~")
+    # Fetch Settings from Single DocType 'GDC Settings'
         settings = frappe.get_doc('GDC Settings')
         # API Request to Mailcow creating a new Mailbox
         mc_values = {"local_part": self.username,
@@ -86,6 +86,7 @@ class Teilnehmerin(Document):
                     }
         mdl_request = requests.post(f'https://{settings.mdl_domain}/webservice/rest/server.php', mdl_params)
         print(mdl_request)
+
 @frappe.whitelist()
 def resetmail(doc: str):
     doc_dict = json.loads(doc)
