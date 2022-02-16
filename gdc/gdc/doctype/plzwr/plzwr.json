@@ -10,7 +10,7 @@
  "field_order": [
   "plz",
   "wirtschaftsregion",
-  "k\u00fcrzel"
+  "kuerzel"
  ],
  "fields": [
   {
@@ -25,14 +25,14 @@
    "label": "Wirtschaftsregion"
   },
   {
-   "fieldname": "k\u00fcrzel",
+   "fieldname": "kuerzel",
    "fieldtype": "Data",
-   "label": "K\u00fcrzel"
+   "label": "Kuerzel"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-14 16:54:03.220536",
+ "modified": "2022-02-16 17:50:30.406058",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "PLZWR",
