@@ -3,6 +3,7 @@
  "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Verwaltung</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teilnehmerinnen\",\"col\":3}}]",
  "creation": "2022-02-08 23:02:30.786103",
  "docstatus": 0,
+ "is_standard": 1,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,

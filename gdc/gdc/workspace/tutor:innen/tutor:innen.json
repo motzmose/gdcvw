@@ -3,6 +3,7 @@
  "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tutor:innen</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teilnehmerinnen\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}}]",
  "creation": "2022-02-14 17:37:34.333961",
  "docstatus": 0,
+ "is_standard": 1,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
