@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:kurstitel",
  "creation": "2022-02-05 15:23:20.288790",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -12,12 +13,13 @@
   {
    "fieldname": "kurstitel",
    "fieldtype": "Data",
-   "label": "Kurstitel"
+   "label": "Kurstitel",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-05 15:23:20.288790",
+ "modified": "2022-02-18 15:11:53.924475",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kurs",
@@ -37,6 +39,5 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
+ "sort_order": "DESC"
 }
