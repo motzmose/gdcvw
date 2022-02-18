@@ -19,9 +19,10 @@ class Teilnehmerin(Document):
 
     # Create Username based on Firstname and Lastname before the Document gets its name
     def before_naming(self):
+        print(self.username)
         num_retries = 100
         nickname = f'{self.vorname.lower().replace(" ", "")}_{self.nachname.lower().replace(" ", "")}'
-        if self.username=="":
+        if not self.username:
             for attempt_no in range(num_retries):
                 if frappe.db.exists('Teilnehmerin', nickname):
                     nickname = f'{self.vorname.lower().replace(" ", "")}_{self.nachname.lower().replace(" ", "")}'+str(attempt_no)
@@ -94,6 +95,7 @@ class Teilnehmerin(Document):
 @frappe.whitelist()
 def resetmail(doc: str):
     doc_dict = json.loads(doc)
+    print(doc_dict)
     settings = frappe.get_doc('GDC Settings')
     values = {
         "items": [
@@ -105,7 +107,10 @@ def resetmail(doc: str):
             }
         }
     headers = {'Content-Type': 'application/json','X-API-Key': settings.mcapi}
-    request = requests.post(f'https://{settings.mdl_domain}/api/v1/edit/mailbox', json=values, headers=headers)
+    request = requests.post(
+        f'https://{settings.mcdomain}/api/v1/edit/mailbox', 
+        json=values, 
+        headers=headers)
     frappe.msgprint(
         title = 'Bestätigung',
         msg = 'Mailpasswort wurde zurückgesetzt')
