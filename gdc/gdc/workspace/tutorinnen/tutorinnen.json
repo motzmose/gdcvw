@@ -1,4 +1,5 @@
 {
+ "category": "Domains",
  "charts": [],
  "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tutorinnen</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teilnehmerinnen\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}}]",
  "creation": "2022-02-14 17:37:34.333961",
