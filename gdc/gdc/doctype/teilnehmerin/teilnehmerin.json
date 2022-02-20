@@ -4,6 +4,11 @@
    "action": "gdc.gdc.doctype.teilnehmerin.teilnehmerin.resetmail",
    "action_type": "Server Action",
    "label": "Mail Passwort zur\u00fccksetzen"
+  },
+  {
+   "action": "gdc.gdc.doctype.teilnehmerin.teilnehmerin.printvalues",
+   "action_type": "Server Action",
+   "label": "Teilnehmerin Daten"
   }
  ],
  "allow_import": 1,
@@ -34,30 +39,9 @@
   "eltern_email",
   "wohererfahren",
   "gruppe",
-  "basiskurse_section",
-  "basiskurse",
-  "digital_communication_basiskurs",
-  "social_media_basiskurs",
-  "snap_basiskurs",
-  "appinventor",
-  "videoschnitt",
-  "3d_druck",
-  "column_break_44",
-  "vertiefungskurse",
-  "social_media_vertiefungskurs",
-  "snap_vertiefungskurs",
-  "python_vertiefungskurs",
-  "dash_vertiefungskurs",
-  "appinventor_vertiefungskurs",
-  "column_break_36",
-  "sonstiges",
-  "berufsbildung",
-  "kleines_zertifikat",
-  "gro\u00dfes_zertifikat",
-  "vertiefungszertifikat_1",
-  "vertiefungszertifikat_2",
-  "vertiefungszertifikat_3",
-  "vertiefungszertifikat_4",
+  "kurse_section",
+  "kurse_heading",
+  "kurse_link",
   "section_break_18",
   "abrechnungsdaten",
   "wirtschaftsregion",
@@ -215,148 +199,27 @@
    "label": "WR"
   },
   {
-   "fieldname": "basiskurse_section",
+   "fieldname": "kurse_section",
    "fieldtype": "Section Break"
   },
   {
-   "default": "0",
-   "fieldname": "digital_communication_basiskurs",
-   "fieldtype": "Check",
-   "label": "Digital Communication Basiskurs"
-  },
-  {
-   "default": "0",
-   "fieldname": "social_media_basiskurs",
-   "fieldtype": "Check",
-   "label": "Social Media Basiskurs"
-  },
-  {
-   "default": "0",
-   "fieldname": "snap_basiskurs",
-   "fieldtype": "Check",
-   "label": "Snap Basiskurs"
-  },
-  {
-   "default": "0",
-   "fieldname": "appinventor",
-   "fieldtype": "Check",
-   "label": "AppInventor"
-  },
-  {
-   "default": "0",
-   "fieldname": "videoschnitt",
-   "fieldtype": "Check",
-   "label": "Videoschnitt"
-  },
-  {
-   "default": "0",
-   "fieldname": "3d_druck",
-   "fieldtype": "Check",
-   "label": "3D Druck"
-  },
-  {
-   "default": "0",
-   "fieldname": "social_media_vertiefungskurs",
-   "fieldtype": "Check",
-   "label": "Social Media Vertiefungskurs"
-  },
-  {
-   "default": "0",
-   "fieldname": "snap_vertiefungskurs",
-   "fieldtype": "Check",
-   "label": "Snap Vertiefungskurs"
-  },
-  {
-   "default": "0",
-   "fieldname": "python_vertiefungskurs",
-   "fieldtype": "Check",
-   "label": "Python Vertiefungskurs"
-  },
-  {
-   "default": "0",
-   "fieldname": "dash_vertiefungskurs",
-   "fieldtype": "Check",
-   "label": "Dash Vertiefungskurs"
-  },
-  {
-   "default": "0",
-   "fieldname": "appinventor_vertiefungskurs",
-   "fieldtype": "Check",
-   "label": "AppInventor Vertiefungskurs"
-  },
-  {
-   "fieldname": "basiskurse",
+   "fieldname": "kurse_heading",
    "fieldtype": "Heading",
-   "label": "Basiskurse"
+   "label": "Kurse"
   },
   {
-   "fieldname": "vertiefungskurse",
-   "fieldtype": "Heading",
-   "label": "Vertiefungskurse"
-  },
-  {
-   "fieldname": "column_break_44",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_36",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "sonstiges",
-   "fieldtype": "Heading",
-   "label": "Sonstiges"
-  },
-  {
-   "default": "0",
-   "fieldname": "berufsbildung",
-   "fieldtype": "Check",
-   "label": "Berufsbildung"
-  },
-  {
-   "default": "0",
-   "fieldname": "kleines_zertifikat",
-   "fieldtype": "Check",
-   "label": "kleines Zertifikat"
-  },
-  {
-   "default": "0",
-   "fieldname": "gro\u00dfes_zertifikat",
-   "fieldtype": "Check",
-   "label": "gro\u00dfes Zertifikat"
-  },
-  {
-   "default": "0",
-   "fieldname": "vertiefungszertifikat_1",
-   "fieldtype": "Check",
-   "label": "Vertiefungszertifikat 1"
-  },
-  {
-   "default": "0",
-   "fieldname": "vertiefungszertifikat_2",
-   "fieldtype": "Check",
-   "label": "Vertiefungszertifikat 2"
-  },
-  {
-   "default": "0",
-   "fieldname": "vertiefungszertifikat_3",
-   "fieldtype": "Check",
-   "label": "Vertiefungszertifikat 3"
-  },
-  {
-   "default": "0",
-   "fieldname": "vertiefungszertifikat_4",
-   "fieldtype": "Check",
-   "label": "Vertiefungszertifikat 4"
+   "fieldname": "kurse_link",
+   "fieldtype": "Link",
+   "label": "Kurs",
+   "options": "Kurs"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-16 17:15:03.179159",
+ "modified": "2022-02-20 15:56:48.986852",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -391,12 +254,11 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Tutor:in",
+   "role": "Tutorin",
    "share": 1,
    "write": 1
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
+ "sort_order": "DESC"
 }

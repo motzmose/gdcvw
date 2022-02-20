@@ -114,3 +114,7 @@ def resetmail(doc: str):
     frappe.msgprint(
         title = 'Bestätigung',
         msg = 'Mailpasswort wurde zurückgesetzt')
+
+@frappe.whitelist()
+def printvalues(doc: str):
+    pass
