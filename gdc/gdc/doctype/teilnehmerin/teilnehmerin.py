@@ -5,6 +5,7 @@ import frappe
 import requests
 import json
 from frappe.model.document import Document
+from unidecode import unidecode
 #from moodle import Moodle
 
 class Teilnehmerin(Document):
@@ -22,12 +23,15 @@ class Teilnehmerin(Document):
         print(self.username)
         num_retries = 100
         nickname = f'{self.vorname.lower().replace(" ", "")}_{self.nachname.lower().replace(" ", "")}'
+        nickname = unidecode(nickname)
         if not self.username:
             for attempt_no in range(num_retries):
-                if frappe.db.exists('Teilnehmerin', nickname):
-                    nickname = f'{self.vorname.lower().replace(" ", "")}_{self.nachname.lower().replace(" ", "")}'+str(attempt_no)
+                nickname_temp = nickname
+                if frappe.db.exists('Teilnehmerin', nickname_temp):
+                    nickname_temp = f'{self.vorname.lower().replace(" ", "")}_{self.nachname.lower().replace(" ", "")}'+str(attempt_no)
+
                 else:
-                    self.username = nickname
+                    self.username = nickname_temp
                     break
         else:
             pass
