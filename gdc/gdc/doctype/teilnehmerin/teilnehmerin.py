@@ -9,6 +9,8 @@ from unidecode import unidecode
 #from moodle import Moodle
 
 class Teilnehmerin(Document):
+    def before_migrate(self):
+        self.vollname = f'{self.vorname} {self.nachname}'
 
     # Read Wirtschaftsregion from Document indexed by zipcode
     def before_save(self):
@@ -96,6 +98,7 @@ class Teilnehmerin(Document):
         mdl_request = requests.post(f'https://{settings.mdl_domain}/webservice/rest/server.php', mdl_params)
         print(mdl_request)
 
+
 @frappe.whitelist()
 def resetmail(doc: str):
     doc_dict = json.loads(doc)
@@ -121,4 +124,8 @@ def resetmail(doc: str):
 
 @frappe.whitelist()
 def printvalues(doc: str):
+    frappe.msgprint(
+        title = "Print Data",
+        msg = doc
+    )
     pass

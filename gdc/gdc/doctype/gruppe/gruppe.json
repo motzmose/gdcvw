@@ -1,12 +1,20 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "gdc.gdc.doctype.gruppe.gruppe.printvalues",
+   "action_type": "Server Action",
+   "label": "Gruppe Daten"
+  }
+ ],
  "autoname": "field:gruppenname",
  "creation": "2022-02-08 12:05:51.019565",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "gruppenname"
+  "gruppenname",
+  "kurs",
+  "teilnehmerinnen"
  ],
  "fields": [
   {
@@ -14,11 +22,23 @@
    "fieldtype": "Data",
    "label": "Gruppenname",
    "unique": 1
+  },
+  {
+   "fieldname": "kurs",
+   "fieldtype": "Table",
+   "label": "Kurs",
+   "options": "Gruppenkurs"
+  },
+  {
+   "fieldname": "teilnehmerinnen",
+   "fieldtype": "Table",
+   "label": "Teilnehmerinnen",
+   "options": "Kursteilnehmerin"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-18 15:10:09.027945",
+ "modified": "2022-02-22 14:48:39.411535",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Gruppe",

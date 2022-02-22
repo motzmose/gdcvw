@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:teilnehmerin",
  "creation": "2022-02-20 16:02:39.734126",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -14,9 +15,11 @@
    "fieldname": "teilnehmerin",
    "fieldtype": "Link",
    "label": "Teilnehmerin",
-   "options": "Teilnehmerin"
+   "options": "Teilnehmerin",
+   "unique": 1
   },
   {
+   "fetch_from": "Teilnehmerin.Vollname",
    "fieldname": "tn_name",
    "fieldtype": "Data",
    "label": "Name"
@@ -25,7 +28,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-02-20 16:04:43.376985",
+ "modified": "2022-02-22 14:55:06.409583",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kursteilnehmerin",

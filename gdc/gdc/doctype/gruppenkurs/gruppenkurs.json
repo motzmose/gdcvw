@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-02-22 12:39:55.287694",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kurs",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "kurs",
+   "fieldtype": "Link",
+   "label": "Kurs",
+   "options": "Kurs"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gruppenkurs",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-02-22 12:40:28.801863",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "Gruppenkurs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

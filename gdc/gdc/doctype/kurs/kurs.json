@@ -1,20 +1,13 @@
 {
- "actions": [
-  {
-   "action": "gdc.gdc.doctype.kurs.kurs.printvalues",
-   "action_type": "Server Action",
-   "label": "Print Values"
-  }
- ],
+ "actions": [],
  "allow_rename": 1,
  "autoname": "field:kurstitel",
- "creation": "2022-02-20 15:51:06.276199",
+ "creation": "2022-02-22 12:43:06.177004",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kurstitel",
-  "teilnehmerinnen_table"
+  "kurstitel"
  ],
  "fields": [
   {
@@ -22,17 +15,11 @@
    "fieldtype": "Data",
    "label": "Kurstitel",
    "unique": 1
-  },
-  {
-   "fieldname": "teilnehmerinnen_table",
-   "fieldtype": "Table",
-   "label": "Teilnehmerinnen",
-   "options": "Kursteilnehmerin"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-20 16:04:47.567928",
+ "modified": "2022-02-22 12:43:49.687562",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kurs",

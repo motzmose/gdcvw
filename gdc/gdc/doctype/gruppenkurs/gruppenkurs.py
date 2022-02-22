@@ -4,5 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-class Kursteilnehmerin(Document):
+class Gruppenkurs(Document):
 	pass
