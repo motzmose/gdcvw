@@ -37,12 +37,12 @@
    "fieldname": "teilnehmerinnen",
    "fieldtype": "Table",
    "label": "Teilnehmerinnen",
-   "options": "Kursteilnehmerin"
+   "options": "Gruppenteilnehmerin"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-23 12:50:26.229283",
+ "modified": "2022-02-23 14:03:47.888722",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kurs",

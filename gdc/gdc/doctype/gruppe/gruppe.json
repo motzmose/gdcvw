@@ -13,7 +13,6 @@
  "engine": "InnoDB",
  "field_order": [
   "gruppenname",
-  "kurs",
   "teilnehmerinnen"
  ],
  "fields": [
@@ -24,12 +23,6 @@
    "unique": 1
   },
   {
-   "fieldname": "kurs",
-   "fieldtype": "Table",
-   "label": "Kurs",
-   "options": "Gruppenkurs"
-  },
-  {
    "fieldname": "teilnehmerinnen",
    "fieldtype": "Table",
    "label": "Teilnehmerinnen",
@@ -38,7 +31,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-22 14:48:39.411535",
+ "modified": "2022-02-23 13:57:20.761098",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Gruppe",
