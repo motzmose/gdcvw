@@ -22,7 +22,6 @@
   "teilnehmerin",
   "vorname",
   "nachname",
-  "vollname",
   "username",
   "email",
   "klasse",
@@ -42,7 +41,7 @@
   "gruppe",
   "kurse_section",
   "kurse_heading",
-  "kurse_link",
+  "kurse_table",
   "section_break_18",
   "abrechnungsdaten",
   "wirtschaftsregion",
@@ -209,20 +208,14 @@
    "label": "Kurse"
   },
   {
-   "fieldname": "kurse_link",
-   "fieldtype": "Link",
-   "label": "Kurs",
-   "options": "Kurs"
-  },
-  {
-   "fieldname": "vollname",
-   "fieldtype": "Data",
-   "label": "Vollname"
+   "fieldname": "kurse_table",
+   "fieldtype": "Table",
+   "options": "Teilnehmerin Kurs"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-22 13:26:54.180321",
+ "modified": "2022-02-23 11:48:22.004268",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",

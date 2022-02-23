@@ -1,25 +1,48 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:kurstitel",
+ "autoname": "format:{kuerzel}-{gruppe}",
  "creation": "2022-02-22 12:43:06.177004",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kurstitel"
+  "kursprogramm",
+  "kuerzel",
+  "gruppe",
+  "teilnehmerinnen"
  ],
  "fields": [
   {
-   "fieldname": "kurstitel",
+   "fieldname": "kursprogramm",
+   "fieldtype": "Link",
+   "label": "Kursprogramm",
+   "options": "Kursprogramm"
+  },
+  {
+   "fieldname": "gruppe",
+   "fieldtype": "Link",
+   "label": "Gruppe",
+   "options": "Gruppe"
+  },
+  {
+   "fetch_from": "kursprogramm.kuerzel",
+   "fieldname": "kuerzel",
    "fieldtype": "Data",
-   "label": "Kurstitel",
-   "unique": 1
+   "hidden": 1,
+   "label": "K\u00fcrzel"
+  },
+  {
+   "fetch_from": "gruppe.teilnehmerinnen",
+   "fieldname": "teilnehmerinnen",
+   "fieldtype": "Table",
+   "label": "Teilnehmerinnen",
+   "options": "Kursteilnehmerin"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-22 12:43:49.687562",
+ "modified": "2022-02-23 12:50:26.229283",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kurs",

@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:titel",
+ "creation": "2022-02-23 12:17:58.719922",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "titel",
+  "kuerzel",
+  "anzahl_termine"
+ ],
+ "fields": [
+  {
+   "fieldname": "titel",
+   "fieldtype": "Data",
+   "label": "Titel",
+   "unique": 1
+  },
+  {
+   "fieldname": "anzahl_termine",
+   "fieldtype": "Data",
+   "label": "Vorgesehene Anzahl Termine"
+  },
+  {
+   "fieldname": "kuerzel",
+   "fieldtype": "Data",
+   "label": "K\u00fcrzel"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-23 12:38:52.216727",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "Kursprogramm",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
