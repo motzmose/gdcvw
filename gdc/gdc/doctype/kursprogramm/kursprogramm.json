@@ -9,7 +9,8 @@
  "field_order": [
   "titel",
   "kuerzel",
-  "anzahl_termine"
+  "anzahl_termine",
+  "zerttext"
  ],
  "fields": [
   {
@@ -27,11 +28,16 @@
    "fieldname": "kuerzel",
    "fieldtype": "Data",
    "label": "K\u00fcrzel"
+  },
+  {
+   "fieldname": "zerttext",
+   "fieldtype": "Text",
+   "label": "Zertifikattext"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-23 12:38:52.216727",
+ "modified": "2022-02-23 15:46:25.055643",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kursprogramm",

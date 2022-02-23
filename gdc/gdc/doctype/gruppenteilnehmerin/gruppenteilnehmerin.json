@@ -4,7 +4,6 @@
  "autoname": "GT.#######",
  "creation": "2022-02-23 14:03:08.879018",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "teilnehmerin",
@@ -14,6 +13,7 @@
   {
    "fieldname": "teilnehmerin",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Teilnehmerin",
    "options": "Teilnehmerin",
    "unique": 1
@@ -21,13 +21,14 @@
   {
    "fieldname": "tn_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-02-23 14:05:43.922874",
+ "modified": "2022-02-23 14:44:31.868199",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Gruppenteilnehmerin",

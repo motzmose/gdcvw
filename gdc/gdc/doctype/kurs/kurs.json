@@ -10,7 +10,8 @@
   "kursprogramm",
   "kuerzel",
   "gruppe",
-  "teilnehmerinnen"
+  "teilnehmerinnen",
+  "kurstermine"
  ],
  "fields": [
   {
@@ -38,11 +39,17 @@
    "fieldtype": "Table",
    "label": "Teilnehmerinnen",
    "options": "Gruppenteilnehmerin"
+  },
+  {
+   "fieldname": "kurstermine",
+   "fieldtype": "Table",
+   "label": "Kurstermine",
+   "options": "Kurstermin"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-23 14:03:47.888722",
+ "modified": "2022-02-23 14:36:42.111074",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kurs",
