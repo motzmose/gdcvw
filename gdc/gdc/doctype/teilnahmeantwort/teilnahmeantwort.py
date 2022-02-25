@@ -4,14 +4,8 @@
 import frappe
 from frappe.model.document import Document
 
-class Kursprogramm(Document):
-	pass
-
-@frappe.whitelist()
-def printvalues(doc: str):
-	print(doc)
-	frappe.msgprint(
-        title = "Print Data",
-        msg = doc
-    )
+class Teilnahmeantwort(Document):
+	def get_context(context):
+		query_params = frappe.request.environ.get('QUERY_STRING')
+		print(query_params)
 	pass

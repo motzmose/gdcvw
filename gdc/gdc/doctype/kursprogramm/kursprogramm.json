@@ -1,5 +1,11 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "gdc.gdc.doctype.kursprogramm.kursprogramm.printvalues",
+   "action_type": "Server Action",
+   "label": "Print Data"
+  }
+ ],
  "allow_rename": 1,
  "autoname": "field:titel",
  "creation": "2022-02-23 12:17:58.719922",
@@ -31,13 +37,13 @@
   },
   {
    "fieldname": "zerttext",
-   "fieldtype": "Text",
+   "fieldtype": "Text Editor",
    "label": "Zertifikattext"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-23 15:46:25.055643",
+ "modified": "2022-02-24 09:24:04.771052",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kursprogramm",
