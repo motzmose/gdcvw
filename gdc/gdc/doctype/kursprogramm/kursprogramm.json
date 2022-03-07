@@ -16,13 +16,16 @@
   "titel",
   "kuerzel",
   "anzahl_termine",
+  "max_tn",
   "zerttext"
  ],
  "fields": [
   {
    "fieldname": "titel",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Titel",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -33,17 +36,28 @@
   {
    "fieldname": "kuerzel",
    "fieldtype": "Data",
-   "label": "K\u00fcrzel"
+   "in_list_view": 1,
+   "label": "K\u00fcrzel",
+   "reqd": 1
   },
   {
    "fieldname": "zerttext",
    "fieldtype": "Text Editor",
-   "label": "Zertifikattext"
+   "in_list_view": 1,
+   "label": "Zertifikattext",
+   "reqd": 1
+  },
+  {
+   "fieldname": "max_tn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Maximale Anzahl Teilnehmerinnen",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-24 09:24:04.771052",
+ "modified": "2022-03-04 18:07:53.018202",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kursprogramm",

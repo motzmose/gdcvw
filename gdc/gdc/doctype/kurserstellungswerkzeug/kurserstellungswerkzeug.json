@@ -1,46 +1,37 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2022-02-24 17:21:23.744253",
+ "creation": "2022-03-04 16:23:35.428399",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "teilnehmerin",
-  "tn_vorname",
-  "tn_nachname",
-  "catchme"
+  "kursprogramm",
+  "termine"
  ],
  "fields": [
   {
-   "fieldname": "teilnehmerin",
+   "fieldname": "kursprogramm",
    "fieldtype": "Link",
-   "label": "Teilnehmerin",
-   "options": "Teilnehmerin"
+   "in_list_view": 1,
+   "label": "Kursprogramm",
+   "options": "Kursprogramm",
+   "reqd": 1
   },
   {
-   "fieldname": "tn_vorname",
-   "fieldtype": "Data",
-   "label": "Vorname"
-  },
-  {
-   "fieldname": "tn_nachname",
-   "fieldtype": "Data",
-   "label": "Nachname"
-  },
-  {
-   "default": "0",
-   "fieldname": "catchme",
-   "fieldtype": "Check",
-   "label": "Catch me!"
+   "fieldname": "termine",
+   "fieldtype": "Table",
+   "label": "Termine",
+   "options": "Kurstermin",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-03 14:38:45.789527",
+ "modified": "2022-03-04 16:25:14.055691",
  "modified_by": "Administrator",
  "module": "GDC",
- "name": "Teilnahmeantwort",
+ "name": "Kurserstellungswerkzeug",
  "owner": "Administrator",
  "permissions": [
   {

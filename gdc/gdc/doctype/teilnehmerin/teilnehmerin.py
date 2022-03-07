@@ -51,7 +51,7 @@ class Teilnehmerin(Document):
                     "password": settings.mcstdpw,
                     "password2": settings.mcstdpw,
                     "active": "1",
-                    "force_pw_update": "1",
+                    "force_pw_update": "0",
                     "tls_enforce_in": "0",
                     "tls_enforce_out": "0"}
         mc_headers = {'Content-Type': 'application/json',
@@ -128,4 +128,12 @@ def printvalues(doc: str):
         title = "Print Data",
         msg = doc
     )
-    pass
+
+@frappe.whitelist(allow_guest=True)
+def getname(teilnehmerin: str):
+    doc = frappe.get_doc('Teilnehmerin',teilnehmerin)
+    vorname = doc.vorname
+    nachname = doc.nachname
+    r = [vorname, nachname]
+    return r
+    # frappe.get_doc('Teilnehmerin',)
