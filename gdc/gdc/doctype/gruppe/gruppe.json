@@ -6,32 +6,32 @@
    "label": "Gruppe Daten"
   }
  ],
- "autoname": "field:gruppenname",
+ "autoname": "format:{typ}{###}",
  "creation": "2022-02-08 12:05:51.019565",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "gruppenname",
+  "typ",
   "teilnehmerinnen"
  ],
  "fields": [
-  {
-   "fieldname": "gruppenname",
-   "fieldtype": "Data",
-   "label": "Gruppenname",
-   "unique": 1
-  },
   {
    "fieldname": "teilnehmerinnen",
    "fieldtype": "Table",
    "label": "Teilnehmerinnen",
    "options": "Kursteilnehmerin"
+  },
+  {
+   "fieldname": "typ",
+   "fieldtype": "Select",
+   "label": "Typ",
+   "options": "K\nV"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-23 13:57:20.761098",
+ "modified": "2022-03-07 17:33:06.935557",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Gruppe",

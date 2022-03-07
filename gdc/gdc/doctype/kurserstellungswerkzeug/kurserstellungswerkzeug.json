@@ -1,5 +1,11 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "gdc.gdc.doctype.kurserstellungswerkzeug.kurserstellungswerkzeug.printvalues",
+   "action_type": "Server Action",
+   "label": "Print Data"
+  }
+ ],
  "allow_rename": 1,
  "creation": "2022-03-04 16:23:35.428399",
  "doctype": "DocType",
@@ -22,13 +28,13 @@
    "fieldname": "termine",
    "fieldtype": "Table",
    "label": "Termine",
-   "options": "Kurstermin",
+   "options": "Kurserstellungstermin",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-04 16:25:14.055691",
+ "modified": "2022-03-07 16:40:37.726821",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kurserstellungswerkzeug",
