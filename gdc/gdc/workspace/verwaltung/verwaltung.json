@@ -1,26 +1,48 @@
 {
+ "cards_label": "Tools",
  "category": "Domains",
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Verwaltung</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teilnehmerinnen\",\"col\":3}}]",
  "creation": "2022-02-08 23:02:30.786103",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
  "docstatus": 0,
- "is_standard": 1,
  "doctype": "Workspace",
+ "extends_another_page": 0,
  "for_user": "",
  "hide_custom": 0,
  "icon": "setting-gear",
  "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
  "label": "Verwaltung",
- "links": [],
- "modified": "2022-02-14 17:37:36.932491",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Kursverwaltung",
+   "link_to": "",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Kurserstellungswerkzeug",
+   "link_to": "Kurserstellungstool",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-03-18 12:19:15.936347",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",
  "owner": "Administrator",
- "parent_page": "",
- "public": 1,
- "roles": [],
- "sequence_id": 2.0,
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
  "shortcuts": [
   {
    "color": "Grey",
@@ -29,6 +51,5 @@
    "link_to": "Teilnehmerin",
    "type": "DocType"
   }
- ],
- "title": "Verwaltung"
+ ]
 }

@@ -1,7 +1,7 @@
 // Copyright (c) 2022, didaktik-aktuell e.V. and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Kurserstellungswerkzeug', {
+frappe.ui.form.on('Kurseinladung', {
 	// refresh: function(frm) {
 
 	// }

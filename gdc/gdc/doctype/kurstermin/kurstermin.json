@@ -7,7 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "kurstitel",
-  "termin"
+  "termin",
+  "ende"
  ],
  "fields": [
   {
@@ -16,16 +17,21 @@
    "label": "Kurstitel"
   },
   {
+   "fieldname": "ende",
+   "fieldtype": "Datetime",
+   "label": "Ende"
+  },
+  {
    "fieldname": "termin",
    "fieldtype": "Datetime",
    "in_list_view": 1,
-   "label": "Termin"
+   "label": "Start"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-02-23 14:55:20.876324",
+ "modified": "2022-03-18 14:40:04.166207",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kurstermin",

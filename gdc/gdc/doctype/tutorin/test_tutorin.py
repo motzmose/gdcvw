@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestKurserstellungswerkzeug(unittest.TestCase):
+class TestTutorin(unittest.TestCase):
 	pass

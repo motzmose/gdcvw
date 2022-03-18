@@ -11,7 +11,8 @@
   "kuerzel",
   "gruppe",
   "teilnehmerinnen",
-  "kurstermine"
+  "kurstermine",
+  "tutorinnen"
  ],
  "fields": [
   {
@@ -45,11 +46,17 @@
    "fieldtype": "Table",
    "label": "Kurstermine",
    "options": "Kurstermin"
+  },
+  {
+   "fieldname": "tutorinnen",
+   "fieldtype": "Table MultiSelect",
+   "label": "Tutorinnen",
+   "options": "Tutorin"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-07 13:02:42.661409",
+ "modified": "2022-03-08 13:05:01.909528",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kurs",
