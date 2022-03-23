@@ -25,7 +25,7 @@ def insert(args):
 	try:
 		grp
 	except:
-		# TODO: Only every second number get's used for naming
+		# TODO: Only every second number gets used for naming
 		grp = frappe.new_doc("Gruppe")
 		grp.typ = "V"
 		grp.insert()
