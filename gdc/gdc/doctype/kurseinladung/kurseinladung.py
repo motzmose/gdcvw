@@ -22,4 +22,4 @@ def loadtn(args):
 				future_tn.pop(-1)
 				print(f"Popped {tn_doc.name}")
 	print(future_tn)
-	return future_tn<
+	return future_tn
