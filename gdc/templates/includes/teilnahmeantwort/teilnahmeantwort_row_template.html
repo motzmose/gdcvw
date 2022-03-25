@@ -1,0 +1,23 @@
+<div class="web-list-item">
+  <a href="/teilnahmeantwort?new=1&teilnehmerin={{ doc.name }}">
+    <div class="row">
+        <div class="col-xs-3">
+            <span class="indicator {{ "green" if doc.name=="*" else "red"}}">
+                {{ doc.name }}
+            </span>
+        </div>
+        <div class="col-xs-3">
+          {{ doc.vorname }}
+        </div>
+        <div class="col-xs-2">
+          {{ doc.nachname }}
+        </div>
+        <div class="col-xs-2 text-right small text-muted">
+          {{ doc.klasse }}
+        </div>
+        <div class="col-xs-2 text-right small text-muted">
+          {{ doc.plz}}
+        </div>
+    </div>
+  </a>
+</div>

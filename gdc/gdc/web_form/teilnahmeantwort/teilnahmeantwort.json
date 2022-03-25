@@ -21,7 +21,7 @@
  "is_standard": 1,
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2022-03-04 16:02:38.276112",
+ "modified": "2022-03-25 13:51:34.175180",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "teilnahmeantwort",
@@ -48,6 +48,30 @@
    "max_value": 0,
    "options": "Teilnehmerin",
    "read_only": 1,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "tn_vorname",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Vorname",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "tn_nachname",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Nachname",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
    "reqd": 0,
    "show_in_filter": 0
   }

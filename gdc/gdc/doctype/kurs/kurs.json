@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{kuerzel}-{######}",
+ "autoname": "naming_series:",
  "creation": "2022-02-22 12:43:06.177004",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -12,7 +12,8 @@
   "gruppe",
   "teilnehmerinnen",
   "kurstermine",
-  "tutorinnen"
+  "tutorinnen",
+  "naming_series"
  ],
  "fields": [
   {
@@ -52,11 +53,17 @@
    "fieldtype": "Table MultiSelect",
    "label": "Tutorinnen",
    "options": "Tutorin"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "naming_series"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-08 13:05:01.909528",
+ "modified": "2022-03-25 13:24:49.791324",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kurs",

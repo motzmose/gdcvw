@@ -18,6 +18,7 @@ def insert(args):
 	if kuerzel == "DC":
 		grp = frappe.new_doc("Gruppe")
 		grp.typ = "K"
+		grp.naming_series = f"{grp.typ}.######"
 		grp.insert()
 	kurs = frappe.new_doc("Kurs")
 	kurs.kursprogramm = args["kursprogramm"]
@@ -25,19 +26,18 @@ def insert(args):
 	try:
 		grp
 	except:
-		# TODO: Only every second number gets used for naming
 		grp = frappe.new_doc("Gruppe")
 		grp.typ = "V"
+		grp.naming_series = f"{grp.typ}.######"
 		grp.insert()
 		kurs.gruppe = grp.name
 	else:
 		kurs.gruppe = grp.name
-		kurs.name = f"{kuerzel}-{grp.name}"
 	print(args["termine"])
 	for kurstermin in args["termine"]:
 		kurs.append("kurstermine",{
 			"kurstitel": kurs.name,
 			"termin": kurstermin["termin"]
 		})
+	kurs.naming_series = f"{kuerzel}.######"
 	kurs.insert()
-

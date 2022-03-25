@@ -6,14 +6,15 @@
    "label": "Gruppe Daten"
   }
  ],
- "autoname": "format:{typ}{###}",
+ "autoname": "naming_series:",
  "creation": "2022-02-08 12:05:51.019565",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "typ",
-  "teilnehmerinnen"
+  "teilnehmerinnen",
+  "naming_series"
  ],
  "fields": [
   {
@@ -27,11 +28,16 @@
    "fieldtype": "Select",
    "label": "Typ",
    "options": "K\nV"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "naming_series"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-07 17:33:06.935557",
+ "modified": "2022-03-25 13:26:21.950177",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Gruppe",
