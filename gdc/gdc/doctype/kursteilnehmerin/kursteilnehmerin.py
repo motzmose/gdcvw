@@ -5,4 +5,8 @@
 from frappe.model.document import Document
 
 class Kursteilnehmerin(Document):
+	def before_insert():
+		parent_doc = self.get_parent()
+		for termin in termine.parent_doc:
+			print(termin)
 	pass

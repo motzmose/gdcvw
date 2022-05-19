@@ -5,4 +5,9 @@
 from frappe.model.document import Document
 
 class Gruppenteilnehmerin(Document):
+	# Funktioniert noch nicht
+	def before_naming(self):
+		parent_doc = self.get_parent()
+		for termin in termine.parent_doc:
+			print(termin)
 	pass

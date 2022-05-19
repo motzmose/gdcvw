@@ -15,10 +15,15 @@ class Teilnehmerin(Document):
     # Read Wirtschaftsregion from Document indexed by zipcode
     def before_save(self):
         plz = self.plz
-        doc = frappe.get_doc('PLZWR', plz)
-        self.wirtschaftsregion = doc.wirtschaftsregion
-        self.wr = doc.kuerzel
-        self.email = f'{self.username}@gdc-bw.de'
+        try: 
+            doc = frappe.get_doc('PLZWR', plz)
+            self.wirtschaftsregion = doc.wirtschaftsregion
+            self.wr = doc.kuerzel
+            self.email = f'{self.username}@gdc-bw.de'
+        except:
+            self.wirtschaftregion = "ERROR"
+            self.wr = "ERR"
+            self.email = f'{self.username}@gdc-bw.de'
 
     # Create Username based on Firstname and Lastname before the Document gets its name
     def before_naming(self):

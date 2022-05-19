@@ -19,11 +19,47 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Teilnehmerinnenverwaltung",
+   "link_to": "",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Teilnehmerinnen",
+   "link_to": "Teilnehmerin",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Kursverwaltung",
    "link_to": "",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Kurse",
+   "link_to": "Kurs",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Kursprogramme",
+   "link_to": "Kursprogramm",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   },
   {
    "hidden": 0,
@@ -36,7 +72,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-03-18 12:19:15.936347",
+ "modified": "2022-05-19 11:46:10.803386",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",
@@ -49,6 +85,12 @@
    "doc_view": "List",
    "label": "Teilnehmerinnen",
    "link_to": "Teilnehmerin",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Kurse",
+   "link_to": "Kurs",
    "type": "DocType"
   }
  ]

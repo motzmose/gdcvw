@@ -61,9 +61,10 @@
    "label": "naming_series"
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-25 13:24:49.791324",
+ "modified": "2022-05-19 12:55:18.802473",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kurs",
