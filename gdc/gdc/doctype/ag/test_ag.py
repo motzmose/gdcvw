@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestKursteilnehmerin(unittest.TestCase):
+class TestAG(unittest.TestCase):
 	pass
