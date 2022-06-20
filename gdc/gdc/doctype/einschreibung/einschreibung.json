@@ -1,43 +1,34 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2022-02-22 12:43:06.177004",
+ "creation": "2022-06-13 13:30:24.323943",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kursprogramm",
-  "kuerzel",
-  "ag"
+  "teilnehmerin",
+  "kurs"
  ],
  "fields": [
   {
-   "fieldname": "kursprogramm",
+   "fieldname": "teilnehmerin",
    "fieldtype": "Link",
-   "label": "Kursprogramm",
-   "options": "Kursprogramm"
+   "label": "Teilnehmerin",
+   "options": "Teilnehmerin"
   },
   {
-   "fetch_from": "kursprogramm.kuerzel",
-   "fieldname": "kuerzel",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "K\u00fcrzel"
-  },
-  {
-   "fieldname": "ag",
+   "fieldname": "kurs",
    "fieldtype": "Link",
-   "label": "AG",
-   "options": "AG"
+   "label": "Kurs",
+   "options": "Kurs"
   }
  ],
- "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-14 16:05:19.179986",
+ "modified": "2022-06-13 13:30:24.323943",
  "modified_by": "Administrator",
  "module": "GDC",
- "name": "Kurs",
+ "name": "Einschreibung",
  "owner": "Administrator",
  "permissions": [
   {
