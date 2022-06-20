@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-20 11:48:52.503087",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ag",
+  "termin",
+  "anwesende",
+  "submit"
+ ],
+ "fields": [
+  {
+   "fieldname": "ag",
+   "fieldtype": "Link",
+   "label": "AG",
+   "options": "AG"
+  },
+  {
+   "fieldname": "termin",
+   "fieldtype": "Link",
+   "label": "Kurs",
+   "options": "AG Termin"
+  },
+  {
+   "fieldname": "anwesende",
+   "fieldtype": "Table MultiSelect",
+   "label": "Anwesende",
+   "options": "AG Teilnehmerin"
+  },
+  {
+   "fieldname": "submit",
+   "fieldtype": "Button",
+   "label": "Anwesenheit best\u00e4tigen!"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-06-20 11:52:51.500580",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "Anwesenheit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "read_only": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

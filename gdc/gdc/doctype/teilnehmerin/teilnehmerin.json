@@ -38,10 +38,8 @@
   "eltern_nachname",
   "eltern_email",
   "wohererfahren",
-  "gruppe",
   "kurse_section",
   "kurse_heading",
-  "kurse_table",
   "section_break_18",
   "abrechnungsdaten",
   "wirtschaftsregion",
@@ -178,12 +176,6 @@
    "label": "Wirtschaftsregion"
   },
   {
-   "fieldname": "gruppe",
-   "fieldtype": "Link",
-   "label": "Gruppe",
-   "options": "Gruppe"
-  },
-  {
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
@@ -206,16 +198,11 @@
    "fieldname": "kurse_heading",
    "fieldtype": "Heading",
    "label": "Kurse"
-  },
-  {
-   "fieldname": "kurse_table",
-   "fieldtype": "Table",
-   "options": "Teilnehmerin Kurs"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-23 11:48:22.004268",
+ "modified": "2022-05-24 13:53:09.574026",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",

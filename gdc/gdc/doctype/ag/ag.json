@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "AG.###",
+ "creation": "2022-05-24 16:40:55.264612",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "termin",
+  "termine",
+  "ag_teilnehmerin",
+  "tutorin"
+ ],
+ "fields": [
+  {
+   "fieldname": "termin",
+   "fieldtype": "Datetime",
+   "label": "Starttermin"
+  },
+  {
+   "fieldname": "ag_teilnehmerin",
+   "fieldtype": "Table MultiSelect",
+   "label": "Teilnehmerinnen",
+   "options": "AG Teilnehmerin"
+  },
+  {
+   "fieldname": "termine",
+   "fieldtype": "Table",
+   "label": "Folgetermine",
+   "options": "AG Termin"
+  },
+  {
+   "fieldname": "tutorin",
+   "fieldtype": "Link",
+   "label": "Tutorin",
+   "options": "User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-06-20 11:45:11.847345",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "AG",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -27,7 +27,7 @@ class Teilnehmerin(Document):
 
     # Create Username based on Firstname and Lastname before the Document gets its name
     def before_naming(self):
-        print(self.username)
+        #print(self.username)
         num_retries = 100
         nickname = f'{self.vorname.lower().replace(" ", "")}_{self.nachname.lower().replace(" ", "")}'
         nickname = unidecode(nickname)
@@ -101,13 +101,11 @@ class Teilnehmerin(Document):
                         "users[0][customfields][7][value]":self.klasse,
                     }
         mdl_request = requests.post(f'https://{settings.mdl_domain}/webservice/rest/server.php', mdl_params)
-        print(mdl_request)
 
 
 @frappe.whitelist()
 def resetmail(doc: str):
     doc_dict = json.loads(doc)
-    print(doc_dict)
     settings = frappe.get_doc('GDC Settings')
     values = {
         "items": [

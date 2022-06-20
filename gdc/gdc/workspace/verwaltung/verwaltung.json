@@ -64,15 +64,22 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Kurserstellungswerkzeug",
-   "link_to": "Kurserstellungstool",
+   "label": "AG Verwaltung",
    "link_type": "DocType",
    "onboard": 0,
-   "only_for": "",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "AGs",
+   "link_to": "AG",
+   "link_type": "DocType",
+   "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2022-05-19 11:46:10.803386",
+ "modified": "2022-06-20 11:08:25.596030",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",
