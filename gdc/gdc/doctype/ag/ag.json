@@ -31,9 +31,10 @@
    "options": "User"
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-14 15:35:24.818614",
+ "modified": "2022-07-18 22:44:36.927455",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "AG",

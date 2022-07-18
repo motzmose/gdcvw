@@ -6,26 +6,34 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "ag",
-  "termin"
+  "termin",
+  "ende",
+  "kursprogramm"
  ],
  "fields": [
-  {
-   "fieldname": "ag",
-   "fieldtype": "Data",
-   "label": "AG"
-  },
   {
    "fieldname": "termin",
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Termin"
+  },
+  {
+   "fieldname": "kursprogramm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kursprogramm",
+   "options": "Kursprogramm"
+  },
+  {
+   "fieldname": "ende",
+   "fieldtype": "Date",
+   "label": "Ende"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-06-20 11:43:28.218305",
+ "modified": "2022-07-18 19:46:29.519243",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "AG Termin",
