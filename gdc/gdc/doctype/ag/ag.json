@@ -7,17 +7,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "termin",
   "termine",
   "ag_teilnehmerin",
   "tutorin"
  ],
  "fields": [
-  {
-   "fieldname": "termin",
-   "fieldtype": "Datetime",
-   "label": "Starttermin"
-  },
   {
    "fieldname": "ag_teilnehmerin",
    "fieldtype": "Table MultiSelect",
@@ -27,7 +21,7 @@
   {
    "fieldname": "termine",
    "fieldtype": "Table",
-   "label": "Folgetermine",
+   "label": "Termine",
    "options": "AG Termin"
   },
   {
@@ -39,7 +33,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-20 11:45:11.847345",
+ "modified": "2022-07-14 15:35:24.818614",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "AG",
