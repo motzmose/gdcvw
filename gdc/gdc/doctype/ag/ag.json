@@ -34,7 +34,7 @@
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-18 22:44:36.927455",
+ "modified": "2022-07-19 13:12:26.549442",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "AG",
@@ -53,6 +53,7 @@
    "write": 1
   }
  ],
+ "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC"
 }

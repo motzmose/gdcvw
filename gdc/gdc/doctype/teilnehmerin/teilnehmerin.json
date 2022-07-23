@@ -59,11 +59,13 @@
   {
    "fieldname": "vorname",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Vorname"
   },
   {
    "fieldname": "nachname",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Nachname"
   },
   {
@@ -202,7 +204,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-05-24 13:53:09.574026",
+ "modified": "2022-07-20 11:50:14.464634",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",

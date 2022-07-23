@@ -12,20 +12,16 @@ class AGerstellen(Document):
 @frappe.whitelist()
 def insert(args):
 	args = json.loads(args)
-	begin = args["erster_termin"]
-	end = args["letzter_termin"]
-	dauer = args["dauer"]
-	repeat = args["wiederholung"]
 	ag = frappe.new_doc("AG")
-	date = begin
-	while frappe.utils.getdate(end) > frappe.utils.getdate(date):
+	date = args["erster_termin"]
+	while frappe.utils.getdate(args["letzter_termin"]) > frappe.utils.getdate(date):
 		ag.append("termine",{
 			"termin" : date,
-			"ende" : frappe.utils.add_to_date(date, minutes=dauer)
+			"ende" : frappe.utils.add_to_date(date, minutes=int(args["dauer"]))
 		})
-		if repeat=="Wöchentlich":
+		if args["wiederholung"]=="Wöchentlich":
 			date = frappe.utils.add_to_date(date, weeks=1)
-		elif repeat=="Täglich":
+		elif args["wiederholung"]=="Täglich":
 			date = frappe.utils.add_to_date(date, days=1)
 			if frappe.utils.getdate(date).weekday() > 4 and not args["wochenende"]:
 				date = frappe.utils.add_to_date(date, days=2)

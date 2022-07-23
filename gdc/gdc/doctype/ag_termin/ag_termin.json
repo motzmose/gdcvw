@@ -8,12 +8,13 @@
  "field_order": [
   "termin",
   "ende",
-  "kursprogramm"
+  "kursprogramm",
+  "anwesenheit"
  ],
  "fields": [
   {
    "fieldname": "termin",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "in_list_view": 1,
    "label": "Termin"
   },
@@ -26,14 +27,20 @@
   },
   {
    "fieldname": "ende",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Ende"
+  },
+  {
+   "fieldname": "anwesenheit",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Anwesenheit"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-07-18 19:46:29.519243",
+ "modified": "2022-07-19 10:43:02.478876",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "AG Termin",

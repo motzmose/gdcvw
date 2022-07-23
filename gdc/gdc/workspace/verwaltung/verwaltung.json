@@ -88,7 +88,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-07-18 14:23:48.360020",
+ "modified": "2022-07-20 11:21:15.326549",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",
@@ -104,9 +104,15 @@
    "type": "DocType"
   },
   {
+   "doc_view": "Calendar",
+   "label": "Kurskalender",
+   "link_to": "AG",
+   "type": "DocType"
+  },
+  {
    "doc_view": "List",
-   "label": "Kurse",
-   "link_to": "Kurs",
+   "label": "AGs",
+   "link_to": "AG",
    "type": "DocType"
   }
  ]
