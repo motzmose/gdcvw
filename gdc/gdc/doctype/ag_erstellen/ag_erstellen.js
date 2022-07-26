@@ -24,6 +24,14 @@ frappe.ui.form.on("AG erstellen", "create", function(frm) {
 				}
 			}
 		})
+		frm.set_value({
+			"erster_termin": null,
+			"letzter_termin": null,
+			"dauer": "90",
+			"wochenende": null,
+			"wiederholung": null,
+			"tutorin": null
+		})
 		frappe.msgprint(__('Kurs wurde erstellt.'));
 	}
 	else {
