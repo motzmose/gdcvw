@@ -1,9 +1,8 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "autoname": "AG.###",
- "creation": "2022-05-24 16:40:55.264612",
+ "autoname": "Block.###",
+ "creation": "2022-08-01 10:26:14.580657",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -14,16 +13,16 @@
  ],
  "fields": [
   {
-   "fieldname": "ag_teilnehmerin",
-   "fieldtype": "Table MultiSelect",
-   "label": "Teilnehmerinnen",
-   "options": "AG Teilnehmerin"
-  },
-  {
    "fieldname": "termine",
    "fieldtype": "Table",
    "label": "Termine",
    "options": "Kurstermin"
+  },
+  {
+   "fieldname": "ag_teilnehmerin",
+   "fieldtype": "Table MultiSelect",
+   "label": "Teilnehmerinnen",
+   "options": "AG Teilnehmerin"
   },
   {
    "fieldname": "tutorin",
@@ -35,10 +34,10 @@
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-03 04:28:13.642831",
+ "modified": "2022-08-01 10:26:14.580657",
  "modified_by": "Administrator",
  "module": "GDC",
- "name": "AG",
+ "name": "Blockveranstaltung",
  "owner": "Administrator",
  "permissions": [
   {

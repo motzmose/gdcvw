@@ -19,43 +19,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "teilnehmerin",
   "vorname",
   "nachname",
+  "column_break_4",
   "username",
   "email",
-  "klasse",
-  "schule",
-  "schulform",
-  "plz",
-  "stadt",
-  "gdc_schule",
-  "endger\u00e4t",
-  "column_break_10",
-  "eltern",
-  "anrede",
-  "eltern_vorname",
-  "eltern_nachname",
-  "eltern_email",
-  "wohererfahren",
-  "kurse_section",
-  "kurse_heading",
-  "section_break_18",
-  "abrechnungsdaten",
-  "wirtschaftsregion",
-  "wr",
-  "einwilligungen",
-  "zoom",
-  "moodle",
-  "evaluation",
-  "bildrechte"
+  "schulform"
  ],
  "fields": [
-  {
-   "fieldname": "teilnehmerin",
-   "fieldtype": "Heading",
-   "label": "Teilnehmerin"
-  },
   {
    "fieldname": "vorname",
    "fieldtype": "Data",
@@ -75,109 +46,6 @@
    "unique": 1
   },
   {
-   "fieldname": "klasse",
-   "fieldtype": "Data",
-   "label": "Klasse"
-  },
-  {
-   "fieldname": "schule",
-   "fieldtype": "Data",
-   "label": "Schule"
-  },
-  {
-   "fieldname": "plz",
-   "fieldtype": "Data",
-   "label": "PLZ"
-  },
-  {
-   "fieldname": "stadt",
-   "fieldtype": "Data",
-   "label": "Stadt"
-  },
-  {
-   "fieldname": "gdc_schule",
-   "fieldtype": "Data",
-   "label": "GDC Schule"
-  },
-  {
-   "fieldname": "column_break_10",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "eltern",
-   "fieldtype": "Heading",
-   "label": "Eltern"
-  },
-  {
-   "fieldname": "eltern_vorname",
-   "fieldtype": "Data",
-   "label": "Eltern Vorname"
-  },
-  {
-   "fieldname": "eltern_nachname",
-   "fieldtype": "Data",
-   "label": "Eltern Nachname"
-  },
-  {
-   "fieldname": "eltern_email",
-   "fieldtype": "Data",
-   "label": "Eltern Email"
-  },
-  {
-   "fieldname": "anrede",
-   "fieldtype": "Data",
-   "label": "Anrede"
-  },
-  {
-   "fieldname": "wohererfahren",
-   "fieldtype": "Data",
-   "label": "WoherErfahren"
-  },
-  {
-   "fieldname": "endger\u00e4t",
-   "fieldtype": "Data",
-   "label": "Endger\u00e4t"
-  },
-  {
-   "fieldname": "evaluation",
-   "fieldtype": "Data",
-   "label": "Evaluation"
-  },
-  {
-   "fieldname": "bildrechte",
-   "fieldtype": "Data",
-   "label": "Bildrechte"
-  },
-  {
-   "fieldname": "zoom",
-   "fieldtype": "Data",
-   "label": "Zoom"
-  },
-  {
-   "fieldname": "moodle",
-   "fieldtype": "Data",
-   "label": "Moodle"
-  },
-  {
-   "fieldname": "section_break_18",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "abrechnungsdaten",
-   "fieldtype": "Heading",
-   "label": "Abrechnungsdaten"
-  },
-  {
-   "fieldname": "einwilligungen",
-   "fieldtype": "Heading",
-   "label": "Einwilligungen"
-  },
-  {
-   "fieldname": "wirtschaftsregion",
-   "fieldtype": "Data",
-   "label": "Wirtschaftsregion"
-  },
-  {
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
@@ -188,23 +56,13 @@
    "label": "Schulform"
   },
   {
-   "fieldname": "wr",
-   "fieldtype": "Data",
-   "label": "WR"
-  },
-  {
-   "fieldname": "kurse_section",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "kurse_heading",
-   "fieldtype": "Heading",
-   "label": "Kurse"
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-20 11:50:14.464634",
+ "modified": "2022-08-03 03:05:36.261938",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",

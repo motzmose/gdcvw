@@ -1,45 +1,30 @@
 {
  "category": "Domains",
  "charts": [],
- "creation": "2022-02-14 17:37:34.333961",
+ "creation": "2022-08-01 11:34:41.510586",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends_another_page": 0,
- "for_user": "",
  "hide_custom": 0,
- "icon": "users",
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "label": "Tutorinnen",
+ "label": "Verwaltung B\u00fcro",
  "links": [],
- "modified": "2022-07-27 09:36:32.450082",
+ "modified": "2022-08-01 14:48:26.534357",
  "modified_by": "Administrator",
  "module": "GDC",
- "name": "Tutorinnen",
+ "name": "Verwaltung B\u00fcro",
  "owner": "Administrator",
  "pin_to_bottom": 0,
  "pin_to_top": 0,
  "shortcuts": [
   {
-   "color": "Grey",
    "doc_view": "List",
-   "label": "Teilnehmerinnen",
-   "link_to": "Teilnehmerin",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "Calendar",
-   "label": "Kurskalender",
+   "label": "Test",
    "link_to": "AG",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
-   "label": "Abschlusstool",
-   "link_to": "Abschlusstool",
    "type": "DocType"
   }
  ]

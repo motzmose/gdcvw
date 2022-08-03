@@ -9,5 +9,5 @@ frappe.views.calendar['AG'] = {
         name: 'name'
     },
     gantt: false,
-    get_events_method: "gdc.gdc.doctype.ag_termin.ag_termin.get_termine"
+    get_events_method: "gdc.gdc.doctype.kurstermin.kurstermin.get_termine"
 }

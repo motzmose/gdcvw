@@ -1,43 +1,43 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2022-02-22 12:43:06.177004",
+ "autoname": "UB.###",
+ "creation": "2022-08-01 10:51:23.126560",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kursprogramm",
-  "kuerzel",
-  "ag"
+  "termine",
+  "ag_teilnehmerin",
+  "tutorin"
  ],
  "fields": [
   {
-   "fieldname": "kursprogramm",
-   "fieldtype": "Link",
-   "label": "Kursprogramm",
-   "options": "Kursprogramm"
+   "fieldname": "termine",
+   "fieldtype": "Table",
+   "label": "Termine",
+   "options": "Kurstermin"
   },
   {
-   "fetch_from": "kursprogramm.kuerzel",
-   "fieldname": "kuerzel",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "K\u00fcrzel"
+   "fieldname": "ag_teilnehmerin",
+   "fieldtype": "Table MultiSelect",
+   "label": "Teilnehmerinnen",
+   "options": "AG Teilnehmerin"
   },
   {
-   "fieldname": "ag",
+   "fieldname": "tutorin",
    "fieldtype": "Link",
-   "label": "AG",
-   "options": "AG"
+   "label": "Tutorin",
+   "options": "User"
   }
  ],
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-14 16:05:19.179986",
+ "modified": "2022-08-01 10:51:23.126560",
  "modified_by": "Administrator",
  "module": "GDC",
- "name": "Kurs",
+ "name": "Unternehmensbesuch",
  "owner": "Administrator",
  "permissions": [
   {
@@ -53,6 +53,7 @@
    "write": 1
   }
  ],
+ "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC"
 }

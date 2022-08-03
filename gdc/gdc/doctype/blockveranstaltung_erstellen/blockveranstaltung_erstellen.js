@@ -1,14 +1,14 @@
 // Copyright (c) 2022, didaktik-aktuell e.V. and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('AG erstellen', {
+frappe.ui.form.on('Blockveranstaltung erstellen', {
 	refresh: function(frm) {
 		frm.disable_save();
 		frm.set_value('dauer', 90);
 	}
 });
 
-frappe.ui.form.on("AG erstellen", "create", function(frm) {
+frappe.ui.form.on("Blockveranstaltun erstellen", "create", function(frm) {
 	if(frm.doc.erster_termin && frm.doc.letzter_termin){
 		frappe.call({
 			method: "gdc.gdc.doctype.ag_erstellen.ag_erstellen.insert",
@@ -32,9 +32,9 @@ frappe.ui.form.on("AG erstellen", "create", function(frm) {
 			"wiederholung": null,
 			"tutorin": null
 		})
-		frappe.msgprint(__('AG wurde erstellt.'));
+		frappe.msgprint(__('Blockveranstaltung wurde erstellt.'));
 	}
 	else {
-		frappe.msgprint(__('AG konnte nicht erstellt werden. Es ist zumindest ein Beginn und Ende erforderlich.'));
+		frappe.msgprint(__('Blockveranstaltung konnte nicht erstellt werden. Es ist zumindest ein Beginn und Ende erforderlich.'));
 	}
 });

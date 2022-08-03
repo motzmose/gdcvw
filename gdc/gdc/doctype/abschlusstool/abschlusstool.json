@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-27 05:16:41.987064",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kursdaten",
+  "tutorin",
+  "ag",
+  "termin",
+  "column_break_5",
+  "abrechnungsdaten",
+  "beginn",
+  "ende",
+  "section_break_9",
+  "anwesenheit",
+  "teilnehmerinnen"
+ ],
+ "fields": [
+  {
+   "fieldname": "tutorin",
+   "fieldtype": "Table MultiSelect",
+   "label": "Tutorin(nen)",
+   "options": "Kurstutorin"
+  },
+  {
+   "fieldname": "ag",
+   "fieldtype": "Link",
+   "label": "AG",
+   "options": "AG"
+  },
+  {
+   "fieldname": "termin",
+   "fieldtype": "Link",
+   "label": "Termin",
+   "options": "Kurstermin"
+  },
+  {
+   "fieldname": "kursdaten",
+   "fieldtype": "Heading",
+   "label": "Kursdaten"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "abrechnungsdaten",
+   "fieldtype": "Heading",
+   "label": "Abrechnungsdaten"
+  },
+  {
+   "fieldname": "beginn",
+   "fieldtype": "Time",
+   "label": "Beginn"
+  },
+  {
+   "fieldname": "ende",
+   "fieldtype": "Time",
+   "label": "Ende"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "anwesenheit",
+   "fieldtype": "Heading",
+   "label": "Anwesenheit"
+  },
+  {
+   "fieldname": "teilnehmerinnen",
+   "fieldtype": "Table MultiSelect",
+   "label": "Teilnehmerinnen",
+   "options": "AG Teilnehmerin"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-08-01 10:19:52.606651",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "Abschlusstool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

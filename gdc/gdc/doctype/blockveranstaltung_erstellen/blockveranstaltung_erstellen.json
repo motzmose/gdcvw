@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2022-07-14 15:38:05.772181",
+ "creation": "2022-08-01 10:38:44.115063",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -26,22 +26,6 @@
    "label": "Letzter Termin"
   },
   {
-   "fieldname": "wiederholung",
-   "fieldtype": "Select",
-   "label": "Wiederholung",
-   "options": "T\u00e4glich\nW\u00f6chentlich"
-  },
-  {
-   "fieldname": "create",
-   "fieldtype": "Button",
-   "label": "Erstellen!"
-  },
-  {
-   "fieldname": "tutorin",
-   "fieldtype": "Data",
-   "label": "Tutorin"
-  },
-  {
    "fieldname": "dauer",
    "fieldtype": "Int",
    "label": "Dauer in Minuten"
@@ -51,15 +35,31 @@
    "fieldname": "wochenende",
    "fieldtype": "Check",
    "label": "Inklusive Wochenende?"
+  },
+  {
+   "fieldname": "wiederholung",
+   "fieldtype": "Select",
+   "label": "Wiederholung",
+   "options": "T\u00e4glich\nW\u00f6chentlich"
+  },
+  {
+   "fieldname": "tutorin",
+   "fieldtype": "Data",
+   "label": "Tutorin"
+  },
+  {
+   "fieldname": "create",
+   "fieldtype": "Button",
+   "label": "Erstellen!"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-07-27 06:26:32.548369",
+ "modified": "2022-08-01 10:38:44.115063",
  "modified_by": "Administrator",
  "module": "GDC",
- "name": "AG erstellen",
+ "name": "Blockveranstaltung erstellen",
  "owner": "Administrator",
  "permissions": [
   {

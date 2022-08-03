@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-01 14:54:48.460683",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kategorie",
+  "barcode",
+  "column_break_3",
+  "status",
+  "leihend",
+  "datum",
+  "section_break_7",
+  "anm"
+ ],
+ "fields": [
+  {
+   "fieldname": "kategorie",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kategorie",
+   "options": "Item Category"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Inventarnummer"
+  },
+  {
+   "fieldname": "anm",
+   "fieldtype": "Text",
+   "label": "Anmerkungen"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Lagernd\nAusgegeben"
+  },
+  {
+   "fieldname": "leihend",
+   "fieldtype": "Link",
+   "label": "Geliehen von",
+   "options": "User"
+  },
+  {
+   "fieldname": "datum",
+   "fieldtype": "Date",
+   "label": "Geliehen am"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-01 15:35:05.423475",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

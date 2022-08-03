@@ -1,0 +1,241 @@
+{
+ "actions": [
+  {
+   "action": "gdc.gdc.doctype.teilnehmerin.teilnehmerin.resetmail",
+   "action_type": "Server Action",
+   "label": "Mail Passwort zur\u00fccksetzen"
+  }
+ ],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:username",
+ "creation": "2022-08-02 15:10:50.648150",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "teilnehmerin",
+  "vorname",
+  "nachname",
+  "username",
+  "email",
+  "klasse",
+  "schule",
+  "schulform",
+  "plz",
+  "stadt",
+  "gdc_schule",
+  "endger\u00e4t",
+  "column_break_10",
+  "eltern",
+  "anrede",
+  "eltern_vorname",
+  "eltern_nachname",
+  "eltern_email",
+  "wohererfahren",
+  "section_break_18",
+  "einwilligungen",
+  "zoom",
+  "moodle",
+  "evaluation",
+  "bildrechte",
+  "column_break_24",
+  "abrechnungsdaten",
+  "wirtschaftsregion",
+  "wr"
+ ],
+ "fields": [
+  {
+   "fieldname": "teilnehmerin",
+   "fieldtype": "Heading",
+   "label": "Teilnehmerin"
+  },
+  {
+   "fieldname": "vorname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vorname"
+  },
+  {
+   "fieldname": "nachname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nachname"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username",
+   "unique": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "klasse",
+   "fieldtype": "Data",
+   "label": "Klasse"
+  },
+  {
+   "fieldname": "schule",
+   "fieldtype": "Data",
+   "label": "Schule"
+  },
+  {
+   "fieldname": "schulform",
+   "fieldtype": "Data",
+   "label": "Schulform"
+  },
+  {
+   "fieldname": "plz",
+   "fieldtype": "Data",
+   "label": "PLZ"
+  },
+  {
+   "fieldname": "stadt",
+   "fieldtype": "Data",
+   "label": "Stadt"
+  },
+  {
+   "fieldname": "gdc_schule",
+   "fieldtype": "Data",
+   "label": "GDC Schule"
+  },
+  {
+   "fieldname": "endger\u00e4t",
+   "fieldtype": "Data",
+   "label": "Endger\u00e4t"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "eltern",
+   "fieldtype": "Heading",
+   "label": "Eltern"
+  },
+  {
+   "fieldname": "anrede",
+   "fieldtype": "Data",
+   "label": "Anrede"
+  },
+  {
+   "fieldname": "eltern_vorname",
+   "fieldtype": "Data",
+   "label": "Eltern Vorname"
+  },
+  {
+   "fieldname": "eltern_nachname",
+   "fieldtype": "Data",
+   "label": "Eltern Nachname"
+  },
+  {
+   "fieldname": "eltern_email",
+   "fieldtype": "Data",
+   "label": "Eltern Email"
+  },
+  {
+   "fieldname": "wohererfahren",
+   "fieldtype": "Data",
+   "label": "WoherErfahren"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "abrechnungsdaten",
+   "fieldtype": "Heading",
+   "label": "Abrechnungsdaten"
+  },
+  {
+   "fieldname": "wirtschaftsregion",
+   "fieldtype": "Data",
+   "label": "Wirtschaftsregion"
+  },
+  {
+   "fieldname": "wr",
+   "fieldtype": "Data",
+   "label": "WR"
+  },
+  {
+   "fieldname": "einwilligungen",
+   "fieldtype": "Heading",
+   "label": "Einwilligungen"
+  },
+  {
+   "fieldname": "zoom",
+   "fieldtype": "Data",
+   "label": "Zoom"
+  },
+  {
+   "fieldname": "moodle",
+   "fieldtype": "Data",
+   "label": "Moodle"
+  },
+  {
+   "fieldname": "evaluation",
+   "fieldtype": "Data",
+   "label": "Evaluation"
+  },
+  {
+   "fieldname": "bildrechte",
+   "fieldtype": "Data",
+   "label": "Bildrechte"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-03 04:12:17.753762",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "TN Stammdaten",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Verwaltung",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tutorin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -2,15 +2,20 @@
 # For license information, please see license.txt
 
 import frappe
+import locale
 from frappe.model.document import Document
 
-class AGTermin(Document):
+class Kurstermin(Document):
+	def autoname(self):
+		self.name = f'{self.parent} - {frappe.utils.getdate(self.termin).isoformat()}'
+	def before_save(self):
+		self.ag = self.parent
 	pass
 
 @frappe.whitelist()
 def get_termine():
 	termine = []
-	sTermine = frappe.get_list('AG Termin',
+	sTermine = frappe.get_list('Kurstermin',
 	fields=['parent','termin','ende','kursprogramm'])
 	for d in sTermine:
 		terminData = {

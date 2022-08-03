@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestKurs(unittest.TestCase):
+class TestLeihvorgang(unittest.TestCase):
 	pass

@@ -1,7 +1,11 @@
 {
  "cards_label": "Tools",
  "category": "Domains",
- "charts": [],
+ "charts": [
+  {
+   "chart_name": "Teilnehmerinnen"
+  }
+ ],
  "creation": "2022-02-08 23:02:30.786103",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -46,19 +50,11 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Kurse",
-   "link_to": "Kurs",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Kursprogramme",
    "link_to": "Kursprogramm",
    "link_type": "DocType",
    "onboard": 0,
+   "only_for": "",
    "type": "Link"
   },
   {
@@ -67,6 +63,7 @@
    "label": "AG Verwaltung",
    "link_type": "DocType",
    "onboard": 0,
+   "only_for": "",
    "type": "Card Break"
   },
   {
@@ -86,9 +83,64 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Blockveranstaltung",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Blockveranstaltungen",
+   "link_to": "Blockveranstaltung",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Blockveranstaltung erstellen",
+   "link_to": "Blockveranstaltung erstellen",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Unternehmensbesuch",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Unternehmensbesuche",
+   "link_to": "Unternehmensbesuch",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Unternehmensbesuch erstellen",
+   "link_to": "Unternehmenbesuch erstellen",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-07-20 11:21:15.326549",
+ "modified": "2022-08-01 12:43:50.603939",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",

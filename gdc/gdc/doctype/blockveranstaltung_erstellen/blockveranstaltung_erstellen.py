@@ -3,21 +3,18 @@
 
 import frappe
 import json
-import datetime
 from frappe.model.document import Document
 
-class AGerstellen(Document):
+class Blockveranstaltungerstellen(Document):
 	pass
 
 @frappe.whitelist()
 def insert(args):
 	args = json.loads(args)
-	ag = frappe.new_doc("AG")
-	ag.insert()
+	ag = frappe.new_doc("Blockveranstaltung")
 	date = args["erster_termin"]
 	while frappe.utils.getdate(args["letzter_termin"]) > frappe.utils.getdate(date):
 		ag.append("termine",{
-			"ag": ag.name,
 			"termin" : date,
 			"ende" : frappe.utils.add_to_date(date, minutes=int(args["dauer"]))
 		})
@@ -31,4 +28,4 @@ def insert(args):
 				pass
 	try: ag.tutor = args["tutorin"]
 	except: ag.tutor = ""
-	ag.save()
+	ag.insert()

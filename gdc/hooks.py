@@ -8,6 +8,12 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "kaimann@didaktik-aktuell.de"
 app_license = "MIT"
+app_logo_url = "/assets/gdc/images/gdc_bildzeichen_rot.svg"
+
+website_context = {
+	"favicon": "/assets/gdc/images/gdc_bildzeichen_rot.svg",
+	"splash_image": "/assets/gdc/images/gdc_bildzeichen_rot.svg",
+}
 
 # Includes in <head>
 # ------------------
