@@ -42,7 +42,10 @@
   "column_break_24",
   "abrechnungsdaten",
   "wirtschaftsregion",
-  "wr"
+  "wr",
+  "registerdate",
+  "section_break_31",
+  "angelegt"
  ],
  "fields": [
   {
@@ -189,11 +192,26 @@
   {
    "fieldname": "column_break_24",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "registerdate",
+   "fieldtype": "Datetime",
+   "label": "Angemeldet am"
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "angelegt",
+   "fieldtype": "Check",
+   "label": "Angelegt"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-03 04:12:17.753762",
+ "modified": "2022-08-04 17:46:01.392209",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "TN Stammdaten",

@@ -2,9 +2,10 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Leihvorgang', {
-	// refresh: function(frm) {
-
-	// }
+	setup: function(frm) {
+		frm.set_value('nutzerin', frappe.session.user);
+		frm.set_value('datum', new Date());
+	}
 });
 
 frappe.ui.form.on('Leihvorgang', "scan", function(frm){

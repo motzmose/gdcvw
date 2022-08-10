@@ -1,11 +1,7 @@
 {
  "cards_label": "Tools",
  "category": "Domains",
- "charts": [
-  {
-   "chart_name": "Teilnehmerinnen"
-  }
- ],
+ "charts": [],
  "creation": "2022-02-08 23:02:30.786103",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -34,6 +30,15 @@
    "is_query_report": 0,
    "label": "Teilnehmerinnen",
    "link_to": "Teilnehmerin",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stammdaten",
+   "link_to": "TN Stammdaten",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -138,9 +143,17 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
   }
  ],
- "modified": "2022-08-01 12:43:50.603939",
+ "modified": "2022-08-04 15:31:48.113060",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",

@@ -8,10 +8,10 @@ frappe.ui.form.on('Blockveranstaltung erstellen', {
 	}
 });
 
-frappe.ui.form.on("Blockveranstaltun erstellen", "create", function(frm) {
+frappe.ui.form.on("Blockveranstaltung erstellen", "create", function(frm) {
 	if(frm.doc.erster_termin && frm.doc.letzter_termin){
 		frappe.call({
-			method: "gdc.gdc.doctype.ag_erstellen.ag_erstellen.insert",
+			method: "gdc.gdc.doctype.blockveranstaltung_erstellen.blockveranstaltung_erstellen.insert",
 			freeze: true,
 			args: {
 				args: {

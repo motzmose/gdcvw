@@ -2,19 +2,18 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Abschlusstool', {
-	setup: function(frm) {
+	ag: function(frm) {
+		frm.refresh
 		console.log("Refreshed");
+		console.log(frm.doc.beginn)
 		frm.set_query('termin', ()=>{
 			return {
 				filters: [
-					["Kurstermin", "ag", "=", frm.ag],
+					["Kurstermin", "ag", "=", frm.doc.ag],
 					["Kurstermin", "abgeschlossen", "=", "False"]
 				]
 			}
 		});
-	},
-	ag: function(frm){
-		console.log(frm.ag);
-		frm.refresh();
+		console.log(frm.doc.ag)
 	}
 });

@@ -11,7 +11,9 @@ class Blockveranstaltungerstellen(Document):
 @frappe.whitelist()
 def insert(args):
 	args = json.loads(args)
-	ag = frappe.new_doc("Blockveranstaltung")
+	ag = frappe.new_doc("AG")
+	ag.title = "B002"
+	ag.typ = "Blockveranstaltung"
 	date = args["erster_termin"]
 	while frappe.utils.getdate(args["letzter_termin"]) > frappe.utils.getdate(date):
 		ag.append("termine",{
