@@ -12,8 +12,18 @@ class Blockveranstaltungerstellen(Document):
 def insert(args):
 	args = json.loads(args)
 	ag = frappe.new_doc("AG")
-	ag.title = "B002"
-	ag.typ = "Blockveranstaltung"
+	try: 
+		last_name = frappe.get_last_doc('AG', filters={"format": "Blockveranstaltung"}).name
+		title=""
+		for x in last_name:
+			if x.isdigit():
+				title += x
+			else:
+				pass
+	except: 
+		title = "B001"
+	ag.title = title
+	ag.format = "Blockveranstaltung"
 	date = args["erster_termin"]
 	while frappe.utils.getdate(args["letzter_termin"]) > frappe.utils.getdate(date):
 		ag.append("termine",{
