@@ -13,11 +13,23 @@ class AGerstellen(Document):
 def insert(args):
 	args = json.loads(args)
 	ag = frappe.new_doc("AG")
-	ag.insert()
+	try: 
+		last_name = frappe.get_last_doc('AG', filters={"format": "AG"}).name
+		title=""
+		for x in last_name:
+			if x.isdigit():
+				title += x
+			else:
+				pass
+		title = "AG" + str(int(title)+1).zfill(3)
+	except: 
+		title = "AG001"
+	ag.title = title
+	ag.format = "AG"
 	date = args["erster_termin"]
 	while frappe.utils.getdate(args["letzter_termin"]) > frappe.utils.getdate(date):
 		ag.append("termine",{
-			"ag": ag.name,
+			"name" : f"{title} - {frappe.utils.getdate(date).isoformat()}",
 			"termin" : date,
 			"ende" : frappe.utils.add_to_date(date, minutes=int(args["dauer"]))
 		})
@@ -31,4 +43,5 @@ def insert(args):
 				pass
 	try: ag.tutor = args["tutorin"]
 	except: ag.tutor = ""
-	ag.save()
+	ag.insert()
+

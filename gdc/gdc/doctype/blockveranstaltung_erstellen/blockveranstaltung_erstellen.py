@@ -20,6 +20,7 @@ def insert(args):
 				title += x
 			else:
 				pass
+		title = "B" + str(int(title)+1).zfill(3)
 	except: 
 		title = "B001"
 	ag.title = title
@@ -27,6 +28,7 @@ def insert(args):
 	date = args["erster_termin"]
 	while frappe.utils.getdate(args["letzter_termin"]) > frappe.utils.getdate(date):
 		ag.append("termine",{
+			"name" : f"{title} - {frappe.utils.getdate(date).isoformat()}",
 			"termin" : date,
 			"ende" : frappe.utils.add_to_date(date, minutes=int(args["dauer"]))
 		})

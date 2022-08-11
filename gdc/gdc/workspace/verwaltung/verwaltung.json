@@ -83,26 +83,16 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "AG erstellen",
-   "link_to": "AG erstellen",
+   "label": "Erstellung",
    "link_type": "DocType",
    "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Blockveranstaltung",
-   "link_type": "DocType",
-   "onboard": 0,
-   "only_for": "",
    "type": "Card Break"
   },
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Blockveranstaltungen",
-   "link_to": "Blockveranstaltung",
+   "label": "AG erstellen",
+   "link_to": "AG erstellen",
    "link_type": "DocType",
    "onboard": 0,
    "only_for": "",
@@ -113,24 +103,6 @@
    "is_query_report": 0,
    "label": "Blockveranstaltung erstellen",
    "link_to": "Blockveranstaltung erstellen",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Unternehmensbesuch",
-   "link_type": "DocType",
-   "onboard": 0,
-   "only_for": "",
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Unternehmensbesuche",
-   "link_to": "Unternehmensbesuch",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -153,7 +125,7 @@
    "type": "Card Break"
   }
  ],
- "modified": "2022-08-04 15:31:48.113060",
+ "modified": "2022-08-10 15:43:06.648928",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",

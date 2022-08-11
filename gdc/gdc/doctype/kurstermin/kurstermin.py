@@ -7,7 +7,10 @@ from frappe.model.document import Document
 
 class Kurstermin(Document):
 	def autoname(self):
-		self.name = f'{self.parent} - {frappe.utils.getdate(self.termin).isoformat()}'
+		if self.parent:
+			self.name = f'{self.parent} - {frappe.utils.getdate(self.termin).isoformat()}'
+		else:
+			self.name = self.name
 	def before_save(self):
 		self.ag = self.parent
 	pass
