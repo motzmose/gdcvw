@@ -2,7 +2,6 @@
 # For license information, please see license.txt
 
 import frappe
-import locale
 from frappe.model.document import Document
 
 class Kurstermin(Document):

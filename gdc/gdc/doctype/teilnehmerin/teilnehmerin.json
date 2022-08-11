@@ -11,7 +11,6 @@
    "label": "Teilnehmerin Daten"
   }
  ],
- "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:username",
  "creation": "2022-02-06 21:11:55.201226",
@@ -60,16 +59,16 @@
    "fieldtype": "Column Break"
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-03 03:05:36.261938",
+ "modified": "2022-08-11 13:16:55.127383",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",
  "owner": "Administrator",
  "permissions": [
   {
-   "create": 1,
    "delete": 1,
    "email": 1,
    "export": 1,
@@ -81,11 +80,9 @@
    "write": 1
   },
   {
-   "create": 1,
    "delete": 1,
    "email": 1,
    "export": 1,
-   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
