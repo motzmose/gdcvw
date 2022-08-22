@@ -12,9 +12,9 @@ class AGerstellen(Document):
 @frappe.whitelist()
 def insert(args):
 	args = json.loads(args)
-	ag = frappe.new_doc("AG")
+	ag = frappe.new_doc("Veranstaltung")
 	try: 
-		last_name = frappe.get_last_doc('AG', filters={"format": "AG"}).name
+		last_name = frappe.get_last_doc('Veranstaltung', filters={"format": "AG"}).name
 		title=""
 		for x in last_name:
 			if x.isdigit():
@@ -31,6 +31,7 @@ def insert(args):
 		ag.append("termine",{
 			"name" : f"{title} - {frappe.utils.getdate(date).isoformat()}",
 			"termin" : date,
+			"ag" : ag.title,
 			"ende" : frappe.utils.add_to_date(date, minutes=int(args["dauer"]))
 		})
 		if args["wiederholung"]=="Wöchentlich":
@@ -44,4 +45,5 @@ def insert(args):
 	try: ag.tutor = args["tutorin"]
 	except: ag.tutor = ""
 	ag.insert()
+	return ag.title
 

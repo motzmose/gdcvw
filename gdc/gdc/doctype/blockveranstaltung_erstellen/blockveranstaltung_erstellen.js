@@ -5,6 +5,7 @@ frappe.ui.form.on('Blockveranstaltung erstellen', {
 	refresh: function(frm) {
 		frm.disable_save();
 		frm.set_value('dauer', 90);
+		frm.set_value('wiederholung', "Täglich")
 	}
 });
 

@@ -30,6 +30,7 @@ def insert(args):
 		ag.append("termine",{
 			"name" : f"{title} - {frappe.utils.getdate(date).isoformat()}",
 			"termin" : date,
+			"ag" : ag.title,
 			"ende" : frappe.utils.add_to_date(date, minutes=int(args["dauer"]))
 		})
 		if args["wiederholung"]=="Wöchentlich":

@@ -22,6 +22,10 @@ frappe.ui.form.on("AG erstellen", "create", function(frm) {
 					"wiederholung": frm.doc.wiederholung,
 					"tutorin": frm.doc.tutorin
 				}
+			},
+			callback: function(r) {
+				console.log(r.message);
+				frappe.msgprint(__(r.message + ' wurde erstellt!'));
 			}
 		})
 		frm.set_value({
@@ -32,7 +36,6 @@ frappe.ui.form.on("AG erstellen", "create", function(frm) {
 			"wiederholung": null,
 			"tutorin": null
 		})
-		frappe.msgprint(__('AG wurde erstellt.'));
 	}
 	else {
 		frappe.msgprint(__('AG konnte nicht erstellt werden. Es ist zumindest ein Beginn und Ende erforderlich.'));
