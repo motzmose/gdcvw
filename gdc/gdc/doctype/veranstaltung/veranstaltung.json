@@ -12,6 +12,7 @@
   "termine",
   "ag_teilnehmerin",
   "tutorin",
+  "ort",
   "format"
  ],
  "fields": [
@@ -43,12 +44,17 @@
    "fieldname": "format",
    "fieldtype": "Data",
    "label": "Format"
+  },
+  {
+   "fieldname": "ort",
+   "fieldtype": "Data",
+   "label": "Ort"
   }
  ],
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-10 12:05:32.939892",
+ "modified": "2022-08-22 13:38:36.992291",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Veranstaltung",
