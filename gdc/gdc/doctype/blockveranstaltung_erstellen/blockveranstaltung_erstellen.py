@@ -11,9 +11,9 @@ class Blockveranstaltungerstellen(Document):
 @frappe.whitelist()
 def insert(args):
 	args = json.loads(args)
-	ag = frappe.new_doc("AG")
+	ag = frappe.new_doc("Veranstaltung")
 	try: 
-		last_name = frappe.get_last_doc('AG', filters={"format": "Blockveranstaltung"}).name
+		last_name = frappe.get_last_doc('Veranstaltung', filters={"format": "Blockveranstaltung"}).name
 		title=""
 		for x in last_name:
 			if x.isdigit():

@@ -4,5 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-class Blockveranstaltung(Document):
+class DokumentationAnwesenheit(Document):
 	pass

@@ -15,8 +15,9 @@
   "beginn",
   "ende",
   "section_break_9",
+  "label_anwesenheit",
   "anwesenheit",
-  "teilnehmerinnen"
+  "absenden"
  ],
  "fields": [
   {
@@ -67,24 +68,28 @@
   },
   {
    "fieldname": "anwesenheit",
+   "fieldtype": "Table",
+   "options": "Dokumentation Anwesenheit"
+  },
+  {
+   "fieldname": "label_anwesenheit",
    "fieldtype": "Heading",
    "label": "Anwesenheit"
   },
   {
-   "fieldname": "teilnehmerinnen",
-   "fieldtype": "Table MultiSelect",
-   "label": "Teilnehmerinnen",
-   "options": "AG Teilnehmerin"
+   "fieldname": "absenden",
+   "fieldtype": "Button",
+   "label": "Absenden"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-08-17 14:47:38.864759",
+ "modified": "2022-08-23 20:05:02.893340",
  "modified_by": "Administrator",
  "module": "GDC",
- "name": "Abschlusstool",
+ "name": "Dokumentation",
  "owner": "Administrator",
  "permissions": [
   {

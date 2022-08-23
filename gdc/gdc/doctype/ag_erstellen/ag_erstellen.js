@@ -24,17 +24,9 @@ frappe.ui.form.on("AG erstellen", "create", function(frm) {
 				}
 			},
 			callback: function(r) {
-				console.log(r.message);
-				frappe.msgprint(__(r.message + ' wurde erstellt!'));
+				console.log(r.message)
+				frappe.set_route("Form","Veranstaltung",r.message);
 			}
-		})
-		frm.set_value({
-			"erster_termin": null,
-			"letzter_termin": null,
-			"dauer": "90",
-			"wochenende": null,
-			"wiederholung": null,
-			"tutorin": null
 		})
 	}
 	else {

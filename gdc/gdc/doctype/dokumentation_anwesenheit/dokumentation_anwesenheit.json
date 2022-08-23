@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-23 20:04:44.889482",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tn",
+  "anwesend",
+  "bemerkung",
+  "termin"
+ ],
+ "fields": [
+  {
+   "fieldname": "tn",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Teilnehmerin",
+   "options": "Teilnehmerin",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "anwesend",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Anwesend?"
+  },
+  {
+   "fieldname": "bemerkung",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Bemerkung"
+  },
+  {
+   "fieldname": "termin",
+   "fieldtype": "Date",
+   "label": "Termin"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-23 20:04:44.889482",
+ "modified_by": "Administrator",
+ "module": "GDC",
+ "name": "Dokumentation Anwesenheit",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

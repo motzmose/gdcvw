@@ -46,4 +46,3 @@ def insert(args):
 	except: ag.tutor = ""
 	ag.insert()
 	return ag.title
-

@@ -6,10 +6,7 @@ from frappe.model.document import Document
 
 class Kurstermin(Document):
 	def autoname(self):
-		if self.parent:
-			self.name = f'{self.parent} - {frappe.utils.getdate(self.termin).isoformat()}'
-		else:
-			self.name = self.name
+		self.name = f'{self.ag} - {frappe.utils.getdate(self.termin).isoformat()}'
 	def before_save(self):
 		self.ag = self.parent
 	pass
@@ -25,7 +22,7 @@ def get_termine():
 			'ende': d.ende,
 			'kursprogramm': f'{d.parent} - {d.kursprogramm}',
 			'id': d.parent,
-			'name': d.parent
+			'name': d.name
 		}
 		termine.append(terminData)
 	return termine

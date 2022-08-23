@@ -15,7 +15,7 @@
  "is_standard": 1,
  "label": "Tutorinnen",
  "links": [],
- "modified": "2022-07-27 09:36:32.450082",
+ "modified": "2022-08-22 19:31:29.397750",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Tutorinnen",
@@ -33,13 +33,13 @@
   {
    "doc_view": "Calendar",
    "label": "Kurskalender",
-   "link_to": "AG",
+   "link_to": "Veranstaltung",
    "type": "DocType"
   },
   {
    "doc_view": "",
-   "label": "Abschlusstool",
-   "link_to": "Abschlusstool",
+   "label": "Dokumentation",
+   "link_to": "Dokumentation",
    "type": "DocType"
   }
  ]

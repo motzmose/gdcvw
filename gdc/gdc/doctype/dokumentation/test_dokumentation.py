@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestUnternehmensbesuch(unittest.TestCase):
+class TestDokumentation(unittest.TestCase):
 	pass
