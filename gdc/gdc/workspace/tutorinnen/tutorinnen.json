@@ -1,27 +1,26 @@
 {
- "category": "Domains",
  "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tutorinnen</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teilnehmerinnen\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kurskalender\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dokumentation\",\"col\":4}}]",
  "creation": "2022-02-14 17:37:34.333961",
- "developer_mode_only": 0,
- "disable_user_customization": 0,
  "docstatus": 0,
  "doctype": "Workspace",
- "extends_another_page": 0,
  "for_user": "",
  "hide_custom": 0,
  "icon": "users",
  "idx": 0,
- "is_default": 0,
- "is_standard": 1,
  "label": "Tutorinnen",
  "links": [],
- "modified": "2022-08-22 19:31:29.397750",
+ "modified": "2022-10-13 17:17:49.719002",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Tutorinnen",
  "owner": "Administrator",
- "pin_to_bottom": 0,
- "pin_to_top": 0,
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 2.0,
  "shortcuts": [
   {
    "color": "Grey",
@@ -42,5 +41,6 @@
    "link_to": "Dokumentation",
    "type": "DocType"
   }
- ]
+ ],
+ "title": "Tutorinnen"
 }
