@@ -7,8 +7,6 @@
   }
  ],
  "allow_import": 1,
- "allow_rename": 1,
- "autoname": "field:username",
  "creation": "2022-08-02 15:10:50.648150",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -19,13 +17,14 @@
   "nachname",
   "username",
   "email",
+  "password",
   "klasse",
   "schule",
   "schulform",
   "plz",
   "stadt",
   "gdc_schule",
-  "endger\u00e4t",
+  "endgerat",
   "column_break_10",
   "eltern",
   "anrede",
@@ -43,9 +42,9 @@
   "abrechnungsdaten",
   "wirtschaftsregion",
   "wr",
-  "registerdate",
+  "date",
   "section_break_31",
-  "angelegt"
+  "id"
  ],
  "fields": [
   {
@@ -77,19 +76,9 @@
    "label": "Email"
   },
   {
-   "fieldname": "klasse",
-   "fieldtype": "Data",
-   "label": "Klasse"
-  },
-  {
    "fieldname": "schule",
    "fieldtype": "Data",
    "label": "Schule"
-  },
-  {
-   "fieldname": "schulform",
-   "fieldtype": "Data",
-   "label": "Schulform"
   },
   {
    "fieldname": "plz",
@@ -107,11 +96,6 @@
    "label": "GDC Schule"
   },
   {
-   "fieldname": "endger\u00e4t",
-   "fieldtype": "Data",
-   "label": "Endger\u00e4t"
-  },
-  {
    "fieldname": "column_break_10",
    "fieldtype": "Column Break"
   },
@@ -124,21 +108,6 @@
    "fieldname": "anrede",
    "fieldtype": "Data",
    "label": "Anrede"
-  },
-  {
-   "fieldname": "eltern_vorname",
-   "fieldtype": "Data",
-   "label": "Eltern Vorname"
-  },
-  {
-   "fieldname": "eltern_nachname",
-   "fieldtype": "Data",
-   "label": "Eltern Nachname"
-  },
-  {
-   "fieldname": "eltern_email",
-   "fieldtype": "Data",
-   "label": "Eltern Email"
   },
   {
    "fieldname": "wohererfahren",
@@ -194,24 +163,58 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "registerdate",
-   "fieldtype": "Datetime",
-   "label": "Angemeldet am"
-  },
-  {
    "fieldname": "section_break_31",
    "fieldtype": "Section Break"
   },
   {
-   "default": "0",
-   "fieldname": "angelegt",
-   "fieldtype": "Check",
-   "label": "Angelegt"
+   "fieldname": "endgerat",
+   "fieldtype": "Data",
+   "label": "Endger\u00e4t"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "Angemeldet am"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "Import ID"
+  },
+  {
+   "fieldname": "schulform",
+   "fieldtype": "Data",
+   "label": "Schulform"
+  },
+  {
+   "fieldname": "eltern_vorname",
+   "fieldtype": "Data",
+   "label": "Eltern Vorname"
+  },
+  {
+   "fieldname": "eltern_nachname",
+   "fieldtype": "Data",
+   "label": "Eltern Nachname"
+  },
+  {
+   "fieldname": "eltern_email",
+   "fieldtype": "Data",
+   "label": "Eltern Email"
+  },
+  {
+   "fieldname": "klasse",
+   "fieldtype": "Data",
+   "label": "Klasse"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Passwort"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-22 13:46:25.693847",
+ "modified": "2022-10-24 17:30:13.104385",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "TN Stammdaten",
@@ -255,5 +258,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "states": []
 }
