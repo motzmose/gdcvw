@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\": \"header\", \"data\": {\"text\": \"Tools\", \"level\": 4, \"col\": 12}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Teilnehmerinnen\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Kurskalender\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"AGs\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Teilnehmerinnenverwaltung\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Kursverwaltung\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Erstellung\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Veranstaltungen\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Reportings\", \"col\": 4}}]",
+ "content": "[{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Teilnehmerinnen\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Kurse\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kurskalender\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tools</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Teilnehmerinnenverwaltung\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Kursverwaltung\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Erstellung\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Veranstaltungen\",\"col\":4}}]",
  "creation": "2022-02-08 23:02:30.786103",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -119,45 +119,33 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Reports",
-   "link_count": 0,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
   }
  ],
- "modified": "2022-10-13 17:17:48.855176",
+ "modified": "2022-11-02 12:29:17.331207",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "quick_lists": [],
+ "quick_lists": [
+  {
+   "document_type": "Veranstaltung",
+   "label": "Kurse"
+  },
+  {
+   "document_type": "Teilnehmerin",
+   "label": "Teilnehmerinnen"
+  }
+ ],
  "restrict_to_domain": "",
  "roles": [],
  "sequence_id": 1.0,
  "shortcuts": [
   {
    "color": "Grey",
-   "doc_view": "List",
-   "label": "Teilnehmerinnen",
-   "link_to": "Teilnehmerin",
-   "type": "DocType"
-  },
-  {
    "doc_view": "Calendar",
    "label": "Kurskalender",
-   "link_to": "Veranstaltung",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "List",
-   "label": "AGs",
    "link_to": "Veranstaltung",
    "type": "DocType"
   }

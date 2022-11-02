@@ -7,7 +7,29 @@ from unidecode import unidecode
 from frappe.model.document import Document
 
 class TNStammdaten(Document):
-	def before_insert(self):
+	def autoname(self):
+		#print("Running autoname")
+		if not self.username or self.username is None or self.username == "":
+			#print("No username found, generating one")
+			num_retries = 100
+			nickname = f'{self.vorname.lower().split(" ")[0].split("-")[0]}_{self.nachname.lower().split(" ")[0].split("-")[0]}'
+			nickname = unidecode(nickname)
+			nickname_temp = nickname
+			for attempt_no in range(num_retries):
+				if frappe.db.exists('TN Stammdaten', nickname_temp):
+					nickname_temp = nickname+str(attempt_no)
+					#print(f'Username {nickname_temp} already exists, trying {nickname_temp}')
+				else:
+					#print("Found a free username")
+					self.username = nickname_temp
+					self.name = nickname_temp
+					return
+		else:
+			#print("Username found, skipping autoname")
+			return
+
+	def before_save(self):
+		#print("Running before_save")
 		self.email = f'{self.username}@gdc-bw.de'
 		plz = self.plz
 		self.password=f'{self.vorname.lower()[0]}{self.nachname.lower()[0]}.GDC*123'
@@ -20,23 +42,10 @@ class TNStammdaten(Document):
 			self.wirtschaftregion = "ERROR"
 			self.wr = "ERR"
 			self.email = f'{self.username}@gdc-bw.de'
-	def autoname(self):
-		if not self.username or self.username == None or self.username == "":
-			num_retries = 100
-			nickname = f'{self.vorname.lower().split(" ")[0].split("-")[0]}_{self.nachname.lower().split(" ")[0].split("-")[0]}'
-			nickname = unidecode(nickname)
-			for attempt_no in range(num_retries):
-				nickname_temp = nickname
-				if frappe.db.exists('TN Stammdaten', nickname_temp):
-					nickname_temp = nickname+str(attempt_no)
-				else:
-					self.username = nickname_temp
-		else:
-			pass
-		self.name=self.username
-		return self
+		#print("before_save has run")
 
 	def after_insert(self):
+		#print("Running after_insert")
 		tn = frappe.new_doc('Teilnehmerin')
 		tn.username = self.username or "Whoops"
 		tn.vorname = self.vorname or "Whoops"
@@ -98,3 +107,4 @@ class TNStammdaten(Document):
 						"users[0][customfields][7][value]":self.klasse,
 					}
 		mdl_request = requests.post(f'https://{settings.mdl_domain}/webservice/rest/server.php', mdl_params)
+		#print("after_insert has run")

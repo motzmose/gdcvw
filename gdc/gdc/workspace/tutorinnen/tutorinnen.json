@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tutorinnen</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teilnehmerinnen\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kurskalender\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dokumentation\",\"col\":4}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tutorinnen</span>\",\"col\":12}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Teilnehmerinnen\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Kurse\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Tools\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}}]",
  "creation": "2022-02-14 17:37:34.333961",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -9,38 +9,56 @@
  "icon": "users",
  "idx": 0,
  "label": "Tutorinnen",
- "links": [],
- "modified": "2022-10-13 17:17:49.719002",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tools",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Kurskalender",
+   "link_count": 0,
+   "link_to": "Veranstaltung",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dokumentation",
+   "link_count": 0,
+   "link_to": "Dokumentation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-11-02 15:17:49.007585",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Tutorinnen",
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "quick_lists": [],
+ "quick_lists": [
+  {
+   "document_type": "Teilnehmerin",
+   "label": "Teilnehmerinnen"
+  },
+  {
+   "document_type": "Veranstaltung",
+   "label": "Kurse"
+  }
+ ],
  "restrict_to_domain": "",
  "roles": [],
  "sequence_id": 2.0,
- "shortcuts": [
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Teilnehmerinnen",
-   "link_to": "Teilnehmerin",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "Calendar",
-   "label": "Kurskalender",
-   "link_to": "Veranstaltung",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
-   "label": "Dokumentation",
-   "link_to": "Dokumentation",
-   "type": "DocType"
-  }
- ],
+ "shortcuts": [],
  "title": "Tutorinnen"
 }
