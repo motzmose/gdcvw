@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Kompetenzzentrum</span>\",\"col\":12}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Kompetenzzentrum</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Mailadressen\",\"col\":3}}]",
  "creation": "2022-10-27 14:58:34.073950",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -10,7 +10,7 @@
  "idx": 0,
  "label": "Kompetenzzentrum",
  "links": [],
- "modified": "2022-11-02 14:21:49.070436",
+ "modified": "2022-11-08 12:06:51.258603",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kompetenzzentrum",
@@ -20,6 +20,15 @@
  "quick_lists": [],
  "roles": [],
  "sequence_id": 3.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Mailadressen",
+   "link_to": "Mails Teilnehmerin",
+   "is_query_report": 0,
+   "type": "Report"
+  }
+ ],
  "title": "Kompetenzzentrum"
 }
