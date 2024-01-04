@@ -45,16 +45,26 @@ class TNStammdaten(Document):
 		#print("before_save has run")
 
 	def after_insert(self):
+		settings = frappe.get_doc('GDC Settings')
+		if settings.mcdomain == "dev" or settings.mdl_domain == "dev":
+			tn = frappe.new_doc('Teilnehmerin')
+			tn.username = self.username or "Error"
+			tn.vorname = self.vorname or "Error"
+			tn.nachname = self.nachname or "Error"
+			tn.email= self.email or "Error"
+			tn.schulform = self.schulform or "Error"
+			tn.password = self.password or "Error"
+			tn.insert()
+			return
 		#print("Running after_insert")
 		tn = frappe.new_doc('Teilnehmerin')
-		tn.username = self.username or "Whoops"
-		tn.vorname = self.vorname or "Whoops"
-		tn.nachname = self.nachname or "Whoops"
-		tn.email= self.email or "Whoops"
-		tn.schulform = self.schulform or "Whoops"
-		tn.password = self.password or "Whoops"
+		tn.username = self.username or "Error"
+		tn.vorname = self.vorname or "Error"
+		tn.nachname = self.nachname or "Error"
+		tn.email= self.email or "Error"
+		tn.schulform = self.schulform or "Error"
+		tn.password = self.password or "Error"
 		tn.insert()
-		settings = frappe.get_doc('GDC Settings')
 		# API Request to Mailcow creating a new Mailbox
 		mc_values = {"local_part": self.username,
 					"domain": "gdc-bw.de",

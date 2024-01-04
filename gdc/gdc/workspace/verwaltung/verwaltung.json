@@ -1,13 +1,15 @@
 {
  "charts": [],
- "content": "[{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Teilnehmerinnen\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Kurse\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kurskalender\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tools</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Teilnehmerinnenverwaltung\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Kursverwaltung\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Erstellung\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Veranstaltungen\",\"col\":4}}]",
+ "content": "[{\"id\":\"i1DUgyBy0J\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Teilnehmerinnen\",\"col\":4}},{\"id\":\"aH2n7k6byD\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Veranstaltungen\",\"col\":4}},{\"id\":\"3Q6CMgInfO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kurskalender\",\"col\":3}},{\"id\":\"H9ZfR1kOI2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tools</span>\",\"col\":12}},{\"id\":\"UgOQnHOwtC\",\"type\":\"card\",\"data\":{\"card_name\":\"Teilnehmerinnenverwaltung\",\"col\":4}},{\"id\":\"qY2gqasjdy\",\"type\":\"card\",\"data\":{\"card_name\":\"Kursverwaltung\",\"col\":4}},{\"id\":\"ZfpTz2Qb8F\",\"type\":\"card\",\"data\":{\"card_name\":\"Erstellung\",\"col\":4}}]",
  "creation": "2022-02-08 23:02:30.786103",
+ "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
  "icon": "setting-gear",
  "idx": 0,
+ "is_hidden": 0,
  "label": "Verwaltung",
  "links": [
   {
@@ -106,32 +108,25 @@
    "is_query_report": 0,
    "label": "Veranstaltungen",
    "link_count": 0,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Veranstaltungen",
-   "link_count": 0,
    "link_to": "Veranstaltung",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2022-11-02 12:29:17.331207",
+ "modified": "2023-12-09 08:56:37.746985",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",
+ "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
  "quick_lists": [
   {
    "document_type": "Veranstaltung",
-   "label": "Kurse"
+   "label": "Veranstaltungen",
+   "quick_list_filter": "[]"
   },
   {
    "document_type": "Teilnehmerin",
