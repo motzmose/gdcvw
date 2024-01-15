@@ -26,6 +26,7 @@
   "stadt",
   "gdc_schule",
   "endger\u00e4t",
+  "password",
   "column_break_10",
   "eltern",
   "anrede",
@@ -348,11 +349,17 @@
    "fieldname": "vertiefungszertifikat_4",
    "fieldtype": "Check",
    "label": "Vertiefungszertifikat 4"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Standard Passwort",
+   "set_only_once": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-16 17:15:03.179159",
+ "modified": "2024-01-15 12:24:03.390875",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",

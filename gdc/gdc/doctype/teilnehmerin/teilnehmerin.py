@@ -5,6 +5,8 @@ import frappe
 import requests
 import json
 from frappe.model.document import Document
+import random
+import string
 #from moodle import Moodle
 
 class Teilnehmerin(Document):
@@ -16,6 +18,15 @@ class Teilnehmerin(Document):
         self.wirtschaftsregion = doc.wirtschaftsregion
         self.wr = doc.kuerzel
         self.email = f'{self.username}@gdc-bw.de'
+        pos = random.randint(0, 7)
+        characters = string.ascii_letters + string.digits
+        password = ''
+        for i in range(8):
+            if i == pos:
+                password += random.choice('!?+*#-=')
+            else:
+                password += random.choice(characters)
+        self.password = password
 
     # Create Username based on Firstname and Lastname before the Document gets its name
     def before_naming(self):
@@ -42,10 +53,10 @@ class Teilnehmerin(Document):
                     "domain": "gdc-bw.de",
                     "name": f"{self.vorname} {self.nachname}",
                     "quota": "100",
-                    "password": settings.mcstdpw,
-                    "password2": settings.mcstdpw,
+                    "password": self.password,
+                    "password2": self.password,
                     "active": "1",
-                    "force_pw_update": "1",
+                    "force_pw_update": "0",
                     "tls_enforce_in": "0",
                     "tls_enforce_out": "0"}
         mc_headers = {'Content-Type': 'application/json',
@@ -59,7 +70,7 @@ class Teilnehmerin(Document):
         mdl_params = {"wstoken": settings.mdl_api_key,
                     "moodlewsrestformat": 'json',
                     "wsfunction": 'core_user_create_users',
-                    "users[0][password]": settings.mdl_std_pwd,
+                    "users[0][password]": self.password,
                     "users[0][username]": self.username,
                     "users[0][firstname]": self.vorname,
                     "users[0][lastname]": self.nachname,
@@ -102,8 +113,8 @@ def resetmail(doc: str):
             f"{doc_dict['username']}@gdc-bw.de"
             ],
         "attr": {
-            "password": settings.mcstdpw,
-            "password2": settings.mcstdpw,
+            "password": doc_dict['password'],
+            "password2": doc_dict['password'],
             }
         }
     headers = {'Content-Type': 'application/json','X-API-Key': settings.mcapi}
