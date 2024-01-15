@@ -1,0 +1,2 @@
+
+gdc.gdc.doctype.teilnehmerin.patches.deploy_password_changes

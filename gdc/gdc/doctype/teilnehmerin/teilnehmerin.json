@@ -353,13 +353,13 @@
   {
    "fieldname": "password",
    "fieldtype": "Data",
-   "label": "Standard Passwort",
+   "label": "Initiales Passwort",
    "set_only_once": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-15 12:24:03.390875",
+ "modified": "2024-01-15 14:54:50.158946",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Teilnehmerin",
