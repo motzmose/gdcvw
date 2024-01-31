@@ -1,59 +1,34 @@
 {
+ "category": "Domains",
  "charts": [],
- "content": "[{\"id\":\"ou4I6DIBz6\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Verwaltung</span>\",\"col\":12}},{\"id\":\"ENQSryuiJ-\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Teilnehmerinnen\",\"col\":4}},{\"id\":\"T_DjoRDcK0\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Kurse\",\"col\":4}},{\"id\":\"CLGEbIh3XC\",\"type\":\"card\",\"data\":{\"card_name\":\"Tools\",\"col\":4}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Verwaltung</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teilnehmerinnen\",\"col\":3}}]",
  "creation": "2022-02-08 23:02:30.786103",
- "custom_blocks": [],
  "docstatus": 0,
+ "is_standard": 1,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
  "icon": "setting-gear",
  "idx": 0,
- "is_hidden": 0,
  "label": "Verwaltung",
- "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Tools",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Kurs erstellen",
-   "link_count": 0,
-   "link_to": "Kurs erstellen",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  }
- ],
- "modified": "2024-01-31 13:55:25.043661",
+ "links": [],
+ "modified": "2022-02-14 17:37:36.932491",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",
- "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "quick_lists": [
-  {
-   "document_type": "Kurs",
-   "label": "Kurse",
-   "quick_list_filter": "[]"
-  },
-  {
-   "document_type": "Teilnehmerin",
-   "label": "Teilnehmerinnen",
-   "quick_list_filter": "[]"
-  }
- ],
  "roles": [],
  "sequence_id": 2.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Teilnehmerinnen",
+   "link_to": "Teilnehmerin",
+   "type": "DocType"
+  }
+ ],
  "title": "Verwaltung"
 }
