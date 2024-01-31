@@ -7,30 +7,22 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kurstitel",
-  "k_tn"
+  "kurstitel"
  ],
  "fields": [
   {
    "fieldname": "kurstitel",
    "fieldtype": "Data",
-   "label": "Kurs ID",
+   "label": "Kurstitel",
    "unique": 1
-  },
-  {
-   "fieldname": "k_tn",
-   "fieldtype": "Table",
-   "label": "Teilnehmerinnen",
-   "options": "Kursteilnehmerin"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-31 12:43:57.166261",
+ "modified": "2022-02-18 15:11:53.924475",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Kurs",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -47,6 +39,5 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
+ "sort_order": "DESC"
 }

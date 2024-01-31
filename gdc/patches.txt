@@ -1,3 +1,2 @@
 
 gdc.gdc.doctype.teilnehmerin.patches.deploy_password_changes
-gdc.gdc.doctype.kurs.patches.drop_doctypes_gruppe_and_implement_kurs
