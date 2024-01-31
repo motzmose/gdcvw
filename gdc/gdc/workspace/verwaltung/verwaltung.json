@@ -1,26 +1,27 @@
 {
  "category": "Domains",
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Verwaltung</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teilnehmerinnen\",\"col\":3}}]",
  "creation": "2022-02-08 23:02:30.786103",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
  "docstatus": 0,
- "is_standard": 1,
  "doctype": "Workspace",
+ "extends_another_page": 0,
  "for_user": "",
  "hide_custom": 0,
  "icon": "setting-gear",
  "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
  "label": "Verwaltung",
  "links": [],
- "modified": "2022-02-14 17:37:36.932491",
+ "modified": "2024-01-31 22:24:57.012304",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "Verwaltung",
  "owner": "Administrator",
- "parent_page": "",
- "public": 1,
- "roles": [],
- "sequence_id": 2.0,
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
  "shortcuts": [
   {
    "color": "Grey",
@@ -28,7 +29,18 @@
    "label": "Teilnehmerinnen",
    "link_to": "Teilnehmerin",
    "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Kurslisten",
+   "link_to": "Kurs",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Kurs erstellen",
+   "link_to": "Kurs erstellen",
+   "type": "DocType"
   }
- ],
- "title": "Verwaltung"
+ ]
 }
