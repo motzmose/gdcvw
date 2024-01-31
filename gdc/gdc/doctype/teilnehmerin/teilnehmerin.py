@@ -19,7 +19,8 @@ class Teilnehmerin(Document):
         self.wr = doc.kuerzel
         self.email = f'{self.username}@gdc-bw.de'
         pos = random.randint(0, 7)
-        characters = string.ascii_letters + string.digits
+        characters = "23456789ABCDEFGHJKLMNPRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
+        characters = list(characters)
         password = ''
         for i in range(8):
             if i == pos:

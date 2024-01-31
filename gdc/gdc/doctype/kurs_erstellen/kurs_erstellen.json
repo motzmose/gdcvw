@@ -1,46 +1,46 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "gdc.gdc.doctype.kursteilnehmerin.kursteilnehmerin.kurs_erstellen",
+   "action_type": "Server Action",
+   "label": "Erstellen"
+  }
+ ],
  "allow_rename": 1,
- "autoname": "field:kurstitel",
- "creation": "2022-02-05 15:23:20.288790",
+ "creation": "2024-01-31 13:20:46.031309",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kurstitel",
-  "k_tn"
+  "k_id",
+  "tn_list"
  ],
  "fields": [
   {
-   "fieldname": "kurstitel",
+   "fieldname": "k_id",
    "fieldtype": "Data",
-   "label": "Kurs ID",
-   "unique": 1
+   "label": "Kurs ID"
   },
   {
-   "fieldname": "k_tn",
-   "fieldtype": "Table",
-   "label": "Teilnehmerinnen",
-   "options": "Kursteilnehmerin"
+   "fieldname": "tn_list",
+   "fieldtype": "Long Text",
+   "label": "Teilnehmerinnen (1 Username pro Zeile)"
   }
  ],
  "index_web_pages_for_search": 1,
+ "issingle": 1,
  "links": [],
- "modified": "2024-01-31 12:43:57.166261",
+ "modified": "2024-01-31 13:43:56.844281",
  "modified_by": "Administrator",
  "module": "GDC",
- "name": "Kurs",
- "naming_rule": "By fieldname",
+ "name": "Kurs erstellen",
  "owner": "Administrator",
  "permissions": [
   {
    "create": 1,
    "delete": 1,
    "email": 1,
-   "export": 1,
    "print": 1,
    "read": 1,
-   "report": 1,
    "role": "System Manager",
    "share": 1,
    "write": 1
