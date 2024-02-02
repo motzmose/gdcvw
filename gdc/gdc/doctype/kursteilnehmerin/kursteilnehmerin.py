@@ -26,4 +26,7 @@ def kurs_erstellen(doc: str):
 		except:
 			pass
 	kurs.insert()
+	frappe.msgprint(
+        title = 'Bestätigung',
+        msg = 'Kurs wurde erstellt')
 

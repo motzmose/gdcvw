@@ -15,7 +15,12 @@
   "mdl_domain",
   "mdl_api_key",
   "mdl_std_course",
-  "mdl_std_pwd"
+  "mdl_std_pwd",
+  "section_break_k3dok",
+  "entwicklungsumgebung",
+  "dev",
+  "legacy",
+  "old_pw_routine"
  ],
  "fields": [
   {
@@ -66,12 +71,37 @@
    "fieldname": "mdl_std_pwd",
    "fieldtype": "Data",
    "label": "Moodle Standard Passwort"
+  },
+  {
+   "fieldname": "section_break_k3dok",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "old_pw_routine",
+   "fieldtype": "Long Text",
+   "label": "Alte Passwortroutine (1 Region/Zeile)"
+  },
+  {
+   "default": "0",
+   "fieldname": "dev",
+   "fieldtype": "Check",
+   "label": "Entwicklungsumgebung"
+  },
+  {
+   "fieldname": "entwicklungsumgebung",
+   "fieldtype": "Heading",
+   "label": "Entwicklungsumgebung"
+  },
+  {
+   "fieldname": "legacy",
+   "fieldtype": "Heading",
+   "label": "Legacy"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-02-08 18:00:56.009243",
+ "modified": "2024-02-02 14:22:44.701465",
  "modified_by": "Administrator",
  "module": "GDC",
  "name": "GDC Settings",
@@ -89,6 +119,5 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
+ "sort_order": "DESC"
 }
